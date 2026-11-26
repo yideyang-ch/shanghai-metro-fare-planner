@@ -1,24 +1,12 @@
 <!doctype html>
-<html lang="en" data-visualize-standalone>
+<html lang="zh-CN" data-visualize-standalone>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="no-referrer">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://shoscarchen.github.io https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com https://persistent.oaistatic.com/plugins/visualize/; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com https://persistent.oaistatic.com/plugins/visualize/charts/; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data: https://shoscarchen.github.io; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://shoscarchen.github.io https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com https://persistent.oaistatic.com/plugins/visualize/; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com https://persistent.oaistatic.com/plugins/visualize/charts/; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data: https://shoscarchen.github.io; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <title>Shanghai Metro Fare Planner</title>
-<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
-
-</head>
-<body>
-<iframe id="codex-visualization" sandbox="allow-scripts" referrerpolicy="no-referrer" title="Shanghai Metro Fare Planner" data-srcdoc="&lt;!doctype html&gt;
-&lt;html lang=&quot;en&quot; data-visualize-standalone&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
-&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://shoscarchen.github.io https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com https://persistent.oaistatic.com/plugins/visualize/; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com https://persistent.oaistatic.com/plugins/visualize/charts/; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data: https://shoscarchen.github.io; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
-&lt;title&gt;Shanghai Metro Fare Planner&lt;/title&gt;
-&lt;style&gt;:root {
+<style>:root {
   color-scheme: light dark;
   background-color: var(
     --background,
@@ -111,11 +99,11 @@
 
   /* Internal implementation variables; not part of the agent contract. */
   --font-sans:
-    -apple-system-body, ui-sans-serif, -apple-system, system-ui, &quot;Segoe UI&quot;,
-    Helvetica, &quot;Apple Color Emoji&quot;, Arial, sans-serif, &quot;Segoe UI Emoji&quot;,
-    &quot;Segoe UI Symbol&quot;;
+    -apple-system-body, ui-sans-serif, -apple-system, system-ui, "Segoe UI",
+    Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+    "Segoe UI Symbol";
   --font-mono:
-    ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;,
+    ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono",
     monospace;
   --font-size-normal: max(11px, var(--font-size-base));
   --font-size-tooltip: calc(var(--font-size-base) - 1px);
@@ -137,7 +125,7 @@
   --radius-2xl: calc(var(--radius) * 2);
   --radius-full: 9999px;
   --shadow-sm: 0 1px 2px -1px rgb(0 0 0 / 8%);
-  --checkmark-image: url(&quot;data:image/svg+xml,%3Csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 17 17&#x27;%3E%3Cpath d=&#x27;M12.8961 3.64101C13.1297 3.41418 13.4984 3.37523 13.7779 3.56581C14.0571 3.75635 14.1554 4.11331 14.0299 4.41347L13.9615 4.53847L7.71151 13.7045C7.59411 13.8767 7.4063 13.9877 7.19881 14.0072C6.99136 14.0267 6.78564 13.9533 6.63826 13.806L2.88826 10.056L2.79842 9.9457C2.6192 9.67407 2.64927 9.30496 2.88826 9.06581C3.12738 8.82669 3.49647 8.79676 3.76815 8.97597L3.8785 9.06581L7.03084 12.2182L12.8053 3.74941L12.8961 3.64101Z&#x27;/%3E%3C/svg%3E&quot;);
+  --checkmark-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 17 17'%3E%3Cpath d='M12.8961 3.64101C13.1297 3.41418 13.4984 3.37523 13.7779 3.56581C14.0571 3.75635 14.1554 4.11331 14.0299 4.41347L13.9615 4.53847L7.71151 13.7045C7.59411 13.8767 7.4063 13.9877 7.19881 14.0072C6.99136 14.0267 6.78564 13.9533 6.63826 13.806L2.88826 10.056L2.79842 9.9457C2.6192 9.67407 2.64927 9.30496 2.88826 9.06581C3.12738 8.82669 3.49647 8.79676 3.76815 8.97597L3.8785 9.06581L7.03084 12.2182L12.8053 3.74941L12.8961 3.64101Z'/%3E%3C/svg%3E");
 
   /* Legacy aliases; not part of the current agent contract. */
   --viz-bg: transparent;
@@ -152,11 +140,11 @@
   --viz-warning: var(--destructive);
 }
 
-:root[data-theme=&quot;light&quot;] {
+:root[data-theme="light"] {
   color-scheme: light;
 }
 
-:root[data-theme=&quot;dark&quot;] {
+:root[data-theme="dark"] {
   color-scheme: dark;
 }
 
@@ -164,7 +152,7 @@
   box-sizing: border-box;
 }
 
-html &gt; body {
+html > body {
   /* Preserve MCP aliases for older inline renderers without creating :root cycles. */
   --color-background-primary: var(
     --background,
@@ -315,7 +303,7 @@ pre code {
   padding-inline-end: calc(var(--font-size-base) * 1.5);
 }
 
-.table-responsive &gt; .table :is(th, td) {
+.table-responsive > .table :is(th, td) {
   overflow-wrap: break-word;
 }
 
@@ -348,12 +336,12 @@ pre code {
   padding-inline-end: 16px;
 }
 
-.table :is(.text-end, [align=&quot;right&quot;]) {
+.table :is(.text-end, [align="right"]) {
   text-align: end;
   font-variant-numeric: tabular-nums;
 }
 
-.table :is(.text-center, [align=&quot;center&quot;]) {
+.table :is(.text-center, [align="center"]) {
   text-align: center;
 }
 
@@ -392,7 +380,7 @@ pre code {
   background: var(--background);
 }
 
-#widget &gt; :not(.card, .widget, .progress) {
+#widget > :not(.card, .widget, .progress) {
   width: 100% !important;
   max-width: none !important;
   margin: 0 !important;
@@ -550,7 +538,7 @@ small,
   gap: 8px;
 }
 
-.viz-controls &gt; .form-label {
+.viz-controls > .form-label {
   display: grid;
   min-width: min(100%, 260px);
   flex: 1 1 280px;
@@ -560,7 +548,7 @@ small,
   margin-bottom: 0;
 }
 
-.viz-controls &gt; .form-label &gt; :is(.form-control, .form-range, .form-select) {
+.viz-controls > .form-label > :is(.form-control, .form-range, .form-select) {
   grid-column: 1 / -1;
 }
 
@@ -624,7 +612,7 @@ small,
   background: var(--secondary);
 }
 
-/* Codex Button size=&quot;compact&quot;; appearance stays with the button variant. */
+/* Codex Button size="compact"; appearance stays with the button variant. */
 .btn-sm {
   --btn-size: 24px;
   padding-inline: 8px;
@@ -655,7 +643,7 @@ a.btn {
   );
 }
 
-.nav-link:not(:disabled):not([aria-disabled=&quot;true&quot;]):hover {
+.nav-link:not(:disabled):not([aria-disabled="true"]):hover {
   background: color-mix(in srgb, var(--foreground) 10%, transparent);
 }
 
@@ -723,16 +711,16 @@ a.btn {
   min-width: 0;
 }
 
-.viz-carousel:has(&gt; .viz-carousel-controls) {
+.viz-carousel:has(> .viz-carousel-controls) {
   min-height: calc(60px + var(--viz-carousel-picker-height, 0px));
   padding-bottom: 60px;
 }
 
-.viz-carousel &gt; [data-variant][hidden] {
+.viz-carousel > [data-variant][hidden] {
   display: none !important;
 }
 
-.viz-carousel &gt; [data-variant] {
+.viz-carousel > [data-variant] {
   isolation: isolate;
 }
 
@@ -747,7 +735,7 @@ a.btn {
   left: 50%;
   display: flex;
   width: max-content;
-  /* Leave room for the host&#x27;s design-controls launcher at the trailing edge. */
+  /* Leave room for the host's design-controls launcher at the trailing edge. */
   max-width: calc(100% - 96px);
   align-items: center;
   gap: 0;
@@ -767,7 +755,7 @@ a.btn {
 
 /* Keep authored mockup button styles out of the shared carousel chrome. */
 .viz-carousel-controls button,
-.viz-carousel-picker &gt; summary {
+.viz-carousel-picker > summary {
   display: flex !important;
   height: auto !important;
   min-height: 30px;
@@ -784,19 +772,19 @@ a.btn {
   -webkit-tap-highlight-color: transparent;
 }
 
-.viz-carousel-controls &gt; button,
-.viz-carousel-picker &gt; summary {
+.viz-carousel-controls > button,
+.viz-carousel-picker > summary {
   position: relative;
   isolation: isolate;
 }
 
-.viz-carousel-controls &gt; button {
+.viz-carousel-controls > button {
   --icon-size: 16px;
   width: 30px !important;
   padding: 0 !important;
 }
 
-.viz-carousel-picker &gt; summary {
+.viz-carousel-picker > summary {
   padding-inline: 12px !important;
 }
 
@@ -809,28 +797,28 @@ a.btn {
   transform: rotate(180deg);
 }
 
-.viz-carousel-controls &gt; button &gt; svg,
+.viz-carousel-controls > button > svg,
 .viz-carousel-controls .viz-carousel-caret,
 .viz-carousel-count {
   opacity: 0.5;
 }
 
-.viz-carousel-controls &gt; button::before,
-.viz-carousel-picker &gt; summary::before {
+.viz-carousel-controls > button::before,
+.viz-carousel-picker > summary::before {
   position: absolute;
   z-index: -1;
   inset: 3px;
   border-radius: 12px;
-  content: &quot;&quot;;
+  content: "";
   pointer-events: none;
 }
 
-.viz-carousel-controls &gt; button:hover::before,
-.viz-carousel-picker &gt; summary:hover::before {
+.viz-carousel-controls > button:hover::before,
+.viz-carousel-picker > summary:hover::before {
   background: var(--viz-carousel-hover);
 }
 
-.viz-carousel-controls &gt; button,
+.viz-carousel-controls > button,
 .viz-carousel-controls [data-lucide],
 .viz-carousel-controls .lucide {
   flex-shrink: 0;
@@ -840,12 +828,12 @@ a.btn {
   min-width: 0;
 }
 
-.viz-carousel-picker &gt; summary {
+.viz-carousel-picker > summary {
   min-width: 0;
   list-style: none;
 }
 
-.viz-carousel-picker &gt; summary::-webkit-details-marker {
+.viz-carousel-picker > summary::-webkit-details-marker {
   display: none;
 }
 
@@ -878,7 +866,7 @@ a.btn {
   box-shadow: 0 4px 12px light-dark(rgb(0 0 0 / 6%), rgb(0 0 0 / 25%));
 }
 
-.viz-carousel-options &gt; button {
+.viz-carousel-options > button {
   border-radius: max(0px, calc(var(--radius-lg) - 5px)) !important;
   width: 100% !important;
   min-height: 28px;
@@ -890,14 +878,14 @@ a.btn {
   overflow-wrap: anywhere;
 }
 
-.viz-carousel-options &gt; [aria-current=&quot;true&quot;],
-.viz-carousel-options &gt; button:hover {
+.viz-carousel-options > [aria-current="true"],
+.viz-carousel-options > button:hover {
   background: var(--viz-carousel-hover) !important;
 }
 
 .btn:disabled,
 .nav-link:disabled,
-.nav-link[aria-disabled=&quot;true&quot;] {
+.nav-link[aria-disabled="true"] {
   cursor: not-allowed;
   opacity: 0.4;
 }
@@ -933,22 +921,22 @@ a.btn {
   line-height: 1.4285714286;
 }
 .form-control:is(
-  [type=&quot;file&quot;],
-  [type=&quot;date&quot;],
-  [type=&quot;datetime-local&quot;],
-  [type=&quot;month&quot;],
-  [type=&quot;week&quot;],
-  [type=&quot;color&quot;]
+  [type="file"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="week"],
+  [type="color"]
 ) {
   height: calc(12px + 2 * var(--control-spacing, 12px));
   min-height: calc(12px + 2 * var(--control-spacing, 12px));
   line-height: 18px;
 }
 .form-control:is(
-  [type=&quot;date&quot;],
-  [type=&quot;datetime-local&quot;],
-  [type=&quot;month&quot;],
-  [type=&quot;week&quot;]
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="week"]
 ) {
   padding-inline: var(--control-spacing, 12px);
 }
@@ -957,13 +945,13 @@ a.btn {
   color: var(--muted-foreground);
 }
 
-.form-control[type=&quot;file&quot;] {
+.form-control[type="file"] {
   overflow: hidden;
   cursor: var(--cursor-interaction, pointer);
   padding: 0;
 }
 
-.form-control[type=&quot;file&quot;]::file-selector-button {
+.form-control[type="file"]::file-selector-button {
   padding: 0 8px;
   border: 0;
   border-right: 1px solid var(--input);
@@ -976,22 +964,22 @@ a.btn {
   margin-inline-end: var(--control-spacing, 12px);
 }
 
-.form-control[type=&quot;file&quot;]:not(:disabled):hover::file-selector-button {
+.form-control[type="file"]:not(:disabled):hover::file-selector-button {
   background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
 }
 
-.form-control-color[type=&quot;color&quot;] {
+.form-control-color[type="color"] {
   width: 40px;
   height: calc(12px + 2 * var(--control-spacing, 12px));
   padding: 3px;
   cursor: var(--cursor-interaction, pointer);
 }
 
-.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch-wrapper {
+.form-control-color[type="color"]::-webkit-color-swatch-wrapper {
   padding: 0;
 }
 
-.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch {
+.form-control-color[type="color"]::-webkit-color-swatch {
   border: 0;
   border-radius: calc(var(--radius-lg) - 4px);
   corner-shape: var(--corner-shape);
@@ -1013,7 +1001,7 @@ textarea.form-control {
   background: color-mix(in srgb, var(--foreground) 5%, transparent);
   opacity: 1;
 }
-.form-control[aria-invalid=&quot;true&quot;] {
+.form-control[aria-invalid="true"] {
   border-color: var(--red);
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--red) 20%, transparent);
 }
@@ -1111,7 +1099,7 @@ textarea.form-control {
     box-shadow 150ms;
 }
 
-.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;] {
+.form-check:not(.form-switch) .form-check-input[type="checkbox"] {
   corner-shape: round;
   box-shadow: var(--shadow-sm);
   position: relative;
@@ -1129,23 +1117,23 @@ textarea.form-control {
 }
 
 .form-check:not(.form-switch)
-  .form-check-input[type=&quot;checkbox&quot;]:is(:checked, :indeterminate) {
+  .form-check-input[type="checkbox"]:is(:checked, :indeterminate) {
   border-color: var(--border-strong, var(--input));
   background-color: color-mix(in srgb, var(--popover) 96%, transparent);
 }
 
 .form-check:not(.form-switch)
-  .form-check-input[type=&quot;checkbox&quot;]:checked::before {
+  .form-check-input[type="checkbox"]:checked::before {
   display: block;
   width: 100%;
   height: 100%;
   background: var(--primary-foreground);
-  content: &quot;&quot;;
+  content: "";
   mask: var(--checkmark-image) center / 12px 12px no-repeat;
   background-color: var(--foreground);
 }
 .form-check:not(.form-switch)
-  .form-check-input[type=&quot;checkbox&quot;]:indeterminate::before {
+  .form-check-input[type="checkbox"]:indeterminate::before {
   position: absolute;
   inset: 0;
   display: block;
@@ -1155,10 +1143,10 @@ textarea.form-control {
   border-radius: var(--radius-full);
   background: var(--foreground);
   mask: none;
-  content: &quot;&quot;;
+  content: "";
 }
 
-.form-check-input[type=&quot;radio&quot;] {
+.form-check-input[type="radio"] {
   border-radius: var(--radius-full);
   width: 16px;
   height: 16px;
@@ -1166,7 +1154,7 @@ textarea.form-control {
   box-shadow: inset 0 0 0 1px var(--input);
 }
 
-.form-check-input[type=&quot;radio&quot;]:checked {
+.form-check-input[type="radio"]:checked {
   border: 0;
   background: radial-gradient(
     circle,
@@ -1180,7 +1168,7 @@ textarea.form-control {
   outline: 2px solid var(--ring);
   outline-offset: 2px;
 }
-.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;]:focus-visible {
+.form-check:not(.form-switch) .form-check-input[type="checkbox"]:focus-visible {
   border-color: var(--ring);
   outline: none;
   box-shadow: 0 0 0 2px var(--ring);
@@ -1194,9 +1182,9 @@ textarea.form-control {
 .form-check:not(.form-switch) .form-check-input:disabled + .form-check-label {
   cursor: not-allowed;
 }
-.form-check:not(.form-switch) .form-check-input[type=&quot;radio&quot;]:disabled,
+.form-check:not(.form-switch) .form-check-input[type="radio"]:disabled,
 .form-check:not(.form-switch)
-  .form-check-input[type=&quot;radio&quot;]:disabled
+  .form-check-input[type="radio"]:disabled
   + .form-check-label {
   opacity: 0.5;
 }
@@ -1233,7 +1221,7 @@ textarea.form-control {
   border: 1px solid light-dark(var(--primary-foreground), var(--foreground));
   border-radius: var(--radius-full);
   box-shadow: var(--shadow-sm);
-  content: &quot;&quot;;
+  content: "";
   transform: translate(2px, -50%);
   transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
   border-color: #fff;
@@ -1321,8 +1309,8 @@ textarea.form-control {
 }
 
 .btn:not(.btn-primary, .viz-tile):is(
-  [aria-pressed=&quot;true&quot;],
-  [aria-selected=&quot;true&quot;],
+  [aria-pressed="true"],
+  [aria-selected="true"],
   .is-selected
 ) {
   border-color: transparent;
@@ -1330,7 +1318,7 @@ textarea.form-control {
   background: var(--blue);
 }
 
-.btn.viz-tile:is([aria-pressed=&quot;true&quot;], [aria-selected=&quot;true&quot;], .is-selected) {
+.btn.viz-tile:is([aria-pressed="true"], [aria-selected="true"], .is-selected) {
   border-color: var(--primary);
   box-shadow: inset 0 0 0 1px var(--primary);
 }
@@ -1349,7 +1337,7 @@ textarea.form-control {
 
 /* Web recipes are the default, including on renderers without inline style queries. */
 @supports (border-radius: if(style(--corner-shape: round): 1px; else: 2px)) {
-  /* Match the host&#x27;s proportional text-sm scale at every text preference. */
+  /* Match the host's proportional text-sm scale at every text preference. */
   .tooltip,
   .viz-badge,
   .btn,
@@ -1385,7 +1373,7 @@ textarea.form-control {
     );
   }
 
-  .form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;] {
+  .form-check:not(.form-switch) .form-check-input[type="checkbox"] {
     border-radius: if(
       style(--corner-shape: round): calc(var(--radius-sm) / 2);
         else: calc(var(--radius-lg) * 0.4)
@@ -1400,7 +1388,7 @@ textarea.form-control {
 }
 
 @media (pointer: coarse) {
-  .viz-carousel:has(&gt; .viz-carousel-controls) {
+  .viz-carousel:has(> .viz-carousel-controls) {
     min-height: calc(76px + var(--viz-carousel-picker-height, 0px));
     padding-bottom: 76px;
   }
@@ -1408,7 +1396,7 @@ textarea.form-control {
   .btn,
   .nav-link,
   .viz-carousel-controls button,
-  .viz-carousel-picker &gt; summary,
+  .viz-carousel-picker > summary,
   .form-control,
   .form-select {
     --btn-size: 44px;
@@ -1426,13 +1414,13 @@ textarea.form-control {
     );
   }
   .form-control:is(
-    [type=&quot;file&quot;],
-    [type=&quot;date&quot;],
-    [type=&quot;datetime-local&quot;],
-    [type=&quot;month&quot;],
-    [type=&quot;week&quot;],
-    [type=&quot;time&quot;],
-    [type=&quot;color&quot;]
+    [type="file"],
+    [type="date"],
+    [type="datetime-local"],
+    [type="month"],
+    [type="week"],
+    [type="time"],
+    [type="color"]
   ) {
     height: 44px;
     min-height: 44px;
@@ -1443,22 +1431,22 @@ textarea.form-control {
     );
   }
 
-  .form-control[type=&quot;file&quot;]::file-selector-button {
+  .form-control[type="file"]::file-selector-button {
     min-width: 44px;
     min-height: 44px;
   }
 
-  .form-control-color[type=&quot;color&quot;] {
+  .form-control-color[type="color"] {
     width: 44px;
     height: 44px;
   }
 
   .form-control:is(
-    [type=&quot;date&quot;],
-    [type=&quot;datetime-local&quot;],
-    [type=&quot;month&quot;],
-    [type=&quot;time&quot;],
-    [type=&quot;week&quot;]
+    [type="date"],
+    [type="datetime-local"],
+    [type="month"],
+    [type="time"],
+    [type="week"]
   ) {
     min-width: 0;
     max-width: 100%;
@@ -1480,7 +1468,7 @@ textarea.form-control {
     left: 50%;
     width: 44px;
     height: 44px;
-    content: &quot;&quot;;
+    content: "";
     transform: translate(-50%, -50%);
   }
 
@@ -1503,7 +1491,7 @@ svg {
   height: auto;
 }
 
-#widget &gt; svg {
+#widget > svg {
   width: 100%;
 }
 
@@ -1522,13 +1510,13 @@ svg.lucide {
   color: var(--destructive);
 }
 
-html&gt;body{padding:0}&lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;script type=&quot;application/json&quot; id=&quot;codex-visualization-widget-state&quot;&gt;__CODEX_VISUALIZATION_WIDGET_STATE__&lt;/script&gt;
-&lt;script&gt;(() =&gt; {
+html>body{padding:0}</style>
+</head>
+<body>
+<script type="application/json" id="codex-visualization-widget-state">{}</script>
+<script>(() => {
   const root = document.documentElement;
-  const mediaQuery = globalThis.matchMedia(&quot;(prefers-color-scheme: dark)&quot;);
+  const mediaQuery = globalThis.matchMedia("(prefers-color-scheme: dark)");
   const apply = Reflect.apply;
   const isArray = Array.isArray;
   const hasOwn = Object.hasOwn;
@@ -1537,29 +1525,29 @@ html&gt;body{padding:0}&lt;/style&gt;
   const parse = JSON.parse;
   const encode = TextEncoder.prototype.encode.bind(new TextEncoder());
   const initialStateElement = document.getElementById(
-    &quot;codex-visualization-widget-state&quot;,
+    "codex-visualization-widget-state",
   );
-  const initialGlobals = parse(initialStateElement?.textContent ?? &quot;{}&quot;);
+  const initialGlobals = parse(initialStateElement?.textContent ?? "{}");
   initialStateElement?.remove();
-  /** @type {Record&lt;string, unknown&gt; | null} */
+  /** @type {Record<string, unknown> | null} */
   let state = initialGlobals.widgetState ?? null;
-  const statePersistence = initialGlobals.statePersistence ?? &quot;none&quot;;
+  const statePersistence = initialGlobals.statePersistence ?? "none";
   let nextStateRequestId = 0;
-  /** @type {Map&lt;number, { resolve: () =&gt; void; reject: (error: Error) =&gt; void; timeout: ReturnType&lt;typeof globalThis.setTimeout&gt;; serializedState: string }&gt;} */
+  /** @type {Map<number, { resolve: () => void; reject: (error: Error) => void; timeout: ReturnType<typeof globalThis.setTimeout>; serializedState: string }>} */
   const pendingStateWrites = new Map();
-  const persistenceError = () =&gt;
+  const persistenceError = () =>
     Object.assign(
-      new Error(&quot;The host could not persist the widget state update&quot;),
+      new Error("The host could not persist the widget state update"),
       {
         code: -32000,
-        data: { code: &quot;widget_state_persistence_failed&quot;, retryable: false },
+        data: { code: "widget_state_persistence_failed", retryable: false },
       },
     );
   /**
    * @param {object} prototype
    * @param {string} property
    */
-  const getPrototypeGetter = (prototype, property) =&gt; {
+  const getPrototypeGetter = (prototype, property) => {
     // oxlint-disable-next-line typescript/unbound-method -- invoked through captured Reflect.apply
     const getter = Object.getOwnPropertyDescriptor(prototype, property)?.get;
     if (getter == null) {
@@ -1567,9 +1555,9 @@ html&gt;body{padding:0}&lt;/style&gt;
     }
     return getter;
   };
-  const getMessageData = getPrototypeGetter(MessageEvent.prototype, &quot;data&quot;);
-  const getMessagePorts = getPrototypeGetter(MessageEvent.prototype, &quot;ports&quot;);
-  const getMessageSource = getPrototypeGetter(MessageEvent.prototype, &quot;source&quot;);
+  const getMessageData = getPrototypeGetter(MessageEvent.prototype, "data");
+  const getMessagePorts = getPrototypeGetter(MessageEvent.prototype, "ports");
+  const getMessageSource = getPrototypeGetter(MessageEvent.prototype, "source");
   // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
   const addHostMessageListener = MessagePort.prototype.addEventListener;
   // oxlint-disable-next-line typescript/unbound-method -- captured before the untrusted fragment runs
@@ -1580,45 +1568,45 @@ html&gt;body{padding:0}&lt;/style&gt;
   const stopMessagePropagation = Event.prototype.stopImmediatePropagation;
   /** @type {MessagePort | null} */
   let hostPort = null;
-  const postToHost = (type, payload) =&gt; {
+  const postToHost = (type, payload) => {
     if (hostPort != null) {
       apply(postHostMessage, hostPort, [{ type, ...payload }]);
     }
   };
-  const openExternal = ({ href }) =&gt; {
+  const openExternal = ({ href }) => {
     if (globalThis.navigator.userActivation?.isActive === true) {
-      postToHost(&quot;open-external&quot;, { href });
+      postToHost("open-external", { href });
     }
   };
-  const sendFollowUpMessage = ({ context, prompt, title }) =&gt; {
+  const sendFollowUpMessage = ({ context, prompt, title }) => {
     if (globalThis.navigator.userActivation?.isActive === true) {
-      postToHost(&quot;follow-up&quot;, { context, prompt, title });
+      postToHost("follow-up", { context, prompt, title });
     }
     return Promise.resolve();
   };
   /**
-   * @param {Record&lt;string, unknown&gt; | ((previous: Record&lt;string, unknown&gt; | null) =&gt; Record&lt;string, unknown&gt;)} next
-   * @returns {Promise&lt;void&gt;}
+   * @param {Record<string, unknown> | ((previous: Record<string, unknown> | null) => Record<string, unknown>)} next
+   * @returns {Promise<void>}
    */
-  const setWidgetState = async (next) =&gt; {
-    const nextState = typeof next === &quot;function&quot; ? next(state) : next;
+  const setWidgetState = async (next) => {
+    const nextState = typeof next === "function" ? next(state) : next;
     if (
       nextState == null ||
-      typeof nextState !== &quot;object&quot; ||
+      typeof nextState !== "object" ||
       isArray(nextState)
     ) {
-      throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+      throw new TypeError("Widget state must be a JSON object");
     }
     const inputState = stringify(
       nextState,
-      (_key, /** @type {unknown} */ value) =&gt; {
+      (_key, /** @type {unknown} */ value) => {
         if (
-          typeof value === &quot;undefined&quot; ||
-          typeof value === &quot;function&quot; ||
-          typeof value === &quot;symbol&quot; ||
-          (typeof value === &quot;number&quot; &amp;&amp; !Number.isFinite(value))
+          typeof value === "undefined" ||
+          typeof value === "function" ||
+          typeof value === "symbol" ||
+          (typeof value === "number" && !Number.isFinite(value))
         ) {
-          throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+          throw new TypeError("Widget state must be a JSON object");
         }
         return value;
       },
@@ -1626,10 +1614,10 @@ html&gt;body{padding:0}&lt;/style&gt;
     const parsedState = parse(inputState);
     if (
       parsedState == null ||
-      typeof parsedState !== &quot;object&quot; ||
+      typeof parsedState !== "object" ||
       isArray(parsedState)
     ) {
-      throw new TypeError(&quot;Widget state must be a JSON object&quot;);
+      throw new TypeError("Widget state must be a JSON object");
     }
     const storedState = {
       modelContent: null,
@@ -1637,63 +1625,63 @@ html&gt;body{padding:0}&lt;/style&gt;
       ...parsedState,
     };
     const serializedState = stringify(storedState);
-    if (encode(serializedState).length &gt; 16 * 1024) {
+    if (encode(serializedState).length > 16 * 1024) {
       throw new TypeError(
-        &quot;Widget state must be a JSON object of at most 16 KiB&quot;,
+        "Widget state must be a JSON object of at most 16 KiB",
       );
     }
     if (
-      hasOwn(storedState, &quot;imageIds&quot;) &amp;&amp;
+      hasOwn(storedState, "imageIds") &&
       (!isArray(storedState.imageIds) ||
         storedState.imageIds.some(
-          (/** @type {unknown} */ id) =&gt; typeof id !== &quot;string&quot;,
+          (/** @type {unknown} */ id) => typeof id !== "string",
         ))
     ) {
-      throw new TypeError(&quot;Widget state imageIds must be an array of strings&quot;);
+      throw new TypeError("Widget state imageIds must be an array of strings");
     }
-    if (storedState.imageIds?.length &gt; 0) {
+    if (storedState.imageIds?.length > 0) {
       throw Object.assign(
-        new TypeError(&quot;Visualization state does not support image attachments&quot;),
-        { code: -32602, data: { code: &quot;images_unsupported&quot; } },
+        new TypeError("Visualization state does not support image attachments"),
+        { code: -32602, data: { code: "images_unsupported" } },
       );
     }
     state = storedState;
     globalThis.openai.widgetState = state;
     globalThis.dispatchEvent(
-      new CustomEvent(&quot;openai:set_globals&quot;, {
+      new CustomEvent("openai:set_globals", {
         detail: { globals: { widgetState: state } },
       }),
     );
-    if (statePersistence === &quot;none&quot;) {
+    if (statePersistence === "none") {
       throw persistenceError();
     }
     const id = ++nextStateRequestId;
-    return new Promise((resolve, reject) =&gt; {
-      const timeout = globalThis.setTimeout(() =&gt; {
+    return new Promise((resolve, reject) => {
+      const timeout = globalThis.setTimeout(() => {
         pendingStateWrites.delete(id);
         reject(persistenceError());
       }, 30_000);
       pendingStateWrites.set(id, { resolve, reject, timeout, serializedState });
-      postToHost(&quot;widget-state-write&quot;, { id, state: serializedState });
+      postToHost("widget-state-write", { id, state: serializedState });
     });
   };
-  const bindingElement = document.getElementById(&quot;codex-visualization-bindings&quot;);
-  const mockElement = document.getElementById(&quot;codex-connector-mocks&quot;);
-  const fileElement = document.getElementById(&quot;codex-preview-files&quot;);
+  const bindingElement = document.getElementById("codex-visualization-bindings");
+  const mockElement = document.getElementById("codex-connector-mocks");
+  const fileElement = document.getElementById("codex-preview-files");
   const connectorGlobals = {};
   if (bindingElement != null || mockElement != null || fileElement != null) {
-    const bindings = parse(bindingElement?.textContent ?? &quot;{}&quot;);
+    const bindings = parse(bindingElement?.textContent ?? "{}");
     bindingElement?.remove();
     const values = new Map();
     for (const [name, binding] of Object.entries(bindings)) {
-      if (binding.type === &quot;json&quot;) values.set(name, structuredClone(binding.value));
+      if (binding.type === "json") values.set(name, structuredClone(binding.value));
     }
     const pending = [bindings];
     while (pending.length) {
       const object = pending.pop();
       Object.freeze(object);
       for (const child of Object.values(object)) {
-        if (child !== null &amp;&amp; typeof child === &quot;object&quot;) pending.push(child);
+        if (child !== null && typeof child === "object") pending.push(child);
       }
     }
     const updates = [];
@@ -1702,7 +1690,7 @@ html&gt;body{padding:0}&lt;/style&gt;
       mockElement.remove();
       for (const [name, value] of mocks) {
         values.set(name, value);
-        updates.push({ name, revision: 1, state: &quot;ready&quot;, value: { type: &quot;json&quot;, value } });
+        updates.push({ name, revision: 1, state: "ready", value: { type: "json", value } });
       }
     }
     if (fileElement != null) {
@@ -1711,21 +1699,21 @@ html&gt;body{padding:0}&lt;/style&gt;
       const blobs = new Map();
       const urls = [];
       for (const [name, binding] of Object.entries(bindings)) {
-        if (binding.type !== &quot;file&quot; || !hasOwn(files, binding.path)) continue;
+        if (binding.type !== "file" || !hasOwn(files, binding.path)) continue;
         const file = files[binding.path];
         let blob = blobs.get(binding.path);
         if (blob == null) {
           const bytes = Uint8Array.fromBase64?.(file.base64) ??
-            Uint8Array.from(atob(file.base64), (char) =&gt; char.charCodeAt(0));
+            Uint8Array.from(atob(file.base64), (char) => char.charCodeAt(0));
           blob = new Blob([bytes], { type: file.mimeType });
           blobs.set(binding.path, blob);
         }
         const url = URL.createObjectURL(blob);
         urls.push(url);
         values.set(name, { name: file.name, blob, url });
-        updates.push({ name, revision: 1, state: &quot;ready&quot;, value: { type: &quot;file&quot;, ...file } });
+        updates.push({ name, revision: 1, state: "ready", value: { type: "file", ...file } });
       }
-      globalThis.addEventListener(&quot;pagehide&quot;, (event) =&gt; {
+      globalThis.addEventListener("pagehide", (event) => {
         // A persisted pagehide can restore this same document and its subscriptions.
         if (event.persisted) return;
         for (const url of urls) URL.revokeObjectURL(url);
@@ -1737,24 +1725,24 @@ html&gt;body{padding:0}&lt;/style&gt;
       get bindings() {
         return bindings;
       },
-      /** @param {string} name @param {(value: unknown) =&gt; void} callback */
+      /** @param {string} name @param {(value: unknown) => void} callback */
       onData(name, callback) {
-        if (typeof callback !== &quot;function&quot;) {
-          throw new TypeError(&quot;onData requires a callback&quot;);
+        if (typeof callback !== "function") {
+          throw new TypeError("onData requires a callback");
         }
         try {
           callback(values.get(name));
         } catch (error) {
           // oxlint-disable-next-line no-console -- Keep authored callback failures local.
-          console.error(&quot;Live visualization data callback failed&quot;, error);
+          console.error("Live visualization data callback failed", error);
         }
         // A static preview delivers the current value once per subscription.
-        return () =&gt; {};
+        return () => {};
       },
     };
   }
-  const syncTheme = () =&gt; {
-    const theme = mediaQuery.matches ? &quot;dark&quot; : &quot;light&quot;;
+  const syncTheme = () => {
+    const theme = mediaQuery.matches ? "dark" : "light";
     root.dataset.theme = theme;
     globalThis.openai = {
       ...globalThis.openai,
@@ -1767,16 +1755,16 @@ html&gt;body{padding:0}&lt;/style&gt;
       visualizationTheme: theme,
       widgetState: state,
       statePersistence,
-      stateModelContext: &quot;none&quot;,
+      stateModelContext: "none",
     };
     globalThis.dispatchEvent(
-      new CustomEvent(&quot;openai:set_globals&quot;, {
+      new CustomEvent("openai:set_globals", {
         detail: { globals: globalThis.openai },
       }),
     );
   };
-  const sendHeight = () =&gt; {
-    postToHost(&quot;height&quot;, {
+  const sendHeight = () => {
+    postToHost("height", {
       height: Math.ceil(
         Math.max(
           document.body.scrollHeight,
@@ -1787,16 +1775,16 @@ html&gt;body{padding:0}&lt;/style&gt;
   };
 
   globalThis.addEventListener(
-    &quot;message&quot;,
-    (event) =&gt; {
+    "message",
+    (event) => {
       const data = apply(getMessageData, event, []);
       const ports = apply(getMessagePorts, event, []);
       const source = apply(getMessageSource, event, []);
       if (
         hostPort != null ||
         source !== parentWindow ||
-        typeof data !== &quot;object&quot; ||
-        data?.type !== &quot;codex-visualization-initialize&quot; ||
+        typeof data !== "object" ||
+        data?.type !== "codex-visualization-initialize" ||
         !isArray(ports) ||
         ports.length !== 1
       ) {
@@ -1806,18 +1794,18 @@ html&gt;body{padding:0}&lt;/style&gt;
       const nextHostPort = ports[0];
       try {
         apply(addHostMessageListener, nextHostPort, [
-          &quot;message&quot;,
-          (event) =&gt; {
+          "message",
+          (event) => {
             const data = apply(getMessageData, event, []);
-            if (typeof data === &quot;object&quot; &amp;&amp; data?.type === &quot;measure&quot;) {
+            if (typeof data === "object" && data?.type === "measure") {
               sendHeight();
             } else if (
-              typeof data === &quot;object&quot; &amp;&amp;
-              data?.type === &quot;widget-state-result&quot;
+              typeof data === "object" &&
+              data?.type === "widget-state-result"
             ) {
               /** @type {unknown} */
               const id = data.id;
-              if (typeof id !== &quot;number&quot;) {
+              if (typeof id !== "number") {
                 return;
               }
               const pending = pendingStateWrites.get(id);
@@ -1839,15 +1827,15 @@ html&gt;body{padding:0}&lt;/style&gt;
       }
       hostPort = nextHostPort;
       for (const [id, { serializedState }] of pendingStateWrites) {
-        postToHost(&quot;widget-state-write&quot;, { id, state: serializedState });
+        postToHost("widget-state-write", { id, state: serializedState });
       }
       sendHeight();
     },
     { capture: true },
   );
   document.currentScript?.remove();
-  mediaQuery.addEventListener(&quot;change&quot;, syncTheme);
-  globalThis.addEventListener(&quot;click&quot;, (event) =&gt; {
+  mediaQuery.addEventListener("change", syncTheme);
+  globalThis.addEventListener("click", (event) => {
     if (event.defaultPrevented) {
       return;
     }
@@ -1857,12 +1845,12 @@ html&gt;body{padding:0}&lt;/style&gt;
     } else if (event.target instanceof globalThis.Node) {
       element = event.target.parentElement;
     }
-    const link = element?.closest(&quot;a[href]&quot;);
-    const href = link?.getAttribute(&quot;href&quot;);
+    const link = element?.closest("a[href]");
+    const href = link?.getAttribute("href");
     if (href == null) {
       return;
     }
-    if (href.startsWith(&quot;#&quot;)) {
+    if (href.startsWith("#")) {
       let id;
       try {
         id = decodeURIComponent(href.slice(1));
@@ -1877,7 +1865,7 @@ html&gt;body{padding:0}&lt;/style&gt;
         return;
       }
       event.preventDefault();
-      postToHost(&quot;scroll-to&quot;, {
+      postToHost("scroll-to", {
         top: target.getBoundingClientRect().top + globalThis.scrollY,
       });
       return;
@@ -1888,9 +1876,9 @@ html&gt;body{padding:0}&lt;/style&gt;
   new ResizeObserver(sendHeight).observe(document.body);
   syncTheme();
 })();
-&lt;/script&gt;
-&lt;div id=&quot;sh-metro-planner&quot;&gt;
-  &lt;style&gt;
+</script>
+<div id="sh-metro-planner">
+  <style>
     #sh-metro-planner { display: grid; gap: calc(var(--font-size-base) * 1.1); color: var(--foreground); }
     #sh-metro-planner .intro { display: grid; gap: calc(var(--font-size-base) * .35); padding-right: 90px; }
     #sh-metro-planner .form-section { display: grid; gap: calc(var(--font-size-base) * .7); }
@@ -1918,8 +1906,8 @@ html&gt;body{padding:0}&lt;/style&gt;
     #sh-metro-planner .calendar-day[disabled] { opacity: .35; }
     #sh-metro-planner .day-number { font-weight: 500; }
     #sh-metro-planner .day-status { color: var(--muted-foreground); }
-    #sh-metro-planner .calendar-day[data-kind=&quot;holiday&quot;] .day-status { color: var(--red); }
-    #sh-metro-planner .calendar-day[data-kind=&quot;makeup&quot;] .day-status { color: var(--green); }
+    #sh-metro-planner .calendar-day[data-kind="holiday"] .day-status { color: var(--red); }
+    #sh-metro-planner .calendar-day[data-kind="makeup"] .day-status { color: var(--green); }
     #sh-metro-planner .legend-item { display: inline-flex; align-items: center; gap: calc(var(--font-size-base) * .2); }
     #sh-metro-planner .legend-mark { width: calc(var(--font-size-base) * .55); height: calc(var(--font-size-base) * .55); border-radius: 50%; background: var(--muted-foreground); }
     #sh-metro-planner .legend-mark.holiday { background: var(--red); }
@@ -1955,156 +1943,156 @@ html&gt;body{padding:0}&lt;/style&gt;
       #sh-metro-planner .calendar-grid { grid-auto-rows: calc(var(--font-size-base) * 3.8); }
       #sh-metro-planner .calendar-day { padding-left: 0; padding-right: 0; }
     }
-  &lt;/style&gt;
-  &lt;div class=&quot;intro&quot;&gt;
-    &lt;h1&gt;上海地铁怎么坐更省&lt;/h1&gt;
-    &lt;p class=&quot;text-muted&quot;&gt;起终站与票价保存在本地，按 2026 年 12 月 1 日起的优惠规则比较。&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;hr&gt;
-  &lt;section class=&quot;form-section&quot; aria-labelledby=&quot;sh-route-title&quot;&gt;
-    &lt;div class=&quot;section-head&quot;&gt;&lt;h2 id=&quot;sh-route-title&quot;&gt;路线与票价&lt;/h2&gt;&lt;span class=&quot;text-small text-muted&quot;&gt;票价可手动填写，也可自动查询&lt;/span&gt;&lt;/div&gt;
-    &lt;div class=&quot;route-grid&quot;&gt;
-      &lt;label class=&quot;field&quot;&gt;&lt;span class=&quot;form-label&quot;&gt;出发站&lt;/span&gt;&lt;input id=&quot;sh-origin&quot; class=&quot;form-control&quot; list=&quot;sh-stations&quot; value=&quot;下沙&quot; autocomplete=&quot;off&quot;&gt;&lt;/label&gt;
-      &lt;label class=&quot;field&quot;&gt;&lt;span class=&quot;form-label&quot;&gt;到达站&lt;/span&gt;&lt;input id=&quot;sh-destination&quot; class=&quot;form-control&quot; list=&quot;sh-stations&quot; value=&quot;张江高科&quot; autocomplete=&quot;off&quot;&gt;&lt;/label&gt;
-      &lt;div class=&quot;field fare-field&quot;&gt;&lt;label class=&quot;form-label&quot; for=&quot;sh-fare&quot;&gt;单程新票价（元）&lt;/label&gt;&lt;div class=&quot;fare-entry&quot;&gt;&lt;input id=&quot;sh-fare&quot; class=&quot;form-control&quot; type=&quot;number&quot; min=&quot;3&quot; max=&quot;30&quot; step=&quot;1&quot; value=&quot;7&quot; aria-label=&quot;手动输入单程新票价&quot;&gt;&lt;button id=&quot;sh-query-fare&quot; class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt;&lt;i data-lucide=&quot;cloud-download&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span id=&quot;sh-query-label&quot;&gt;查询票价&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;&lt;span id=&quot;sh-query-status&quot; class=&quot;fare-status text-small text-muted&quot; aria-live=&quot;polite&quot;&gt;&lt;/span&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-  &lt;hr&gt;
-  &lt;section class=&quot;form-section&quot; aria-labelledby=&quot;sh-plan-title&quot;&gt;
-    &lt;div class=&quot;section-head&quot;&gt;&lt;h2 id=&quot;sh-plan-title&quot;&gt;乘车计划&lt;/h2&gt;&lt;span class=&quot;text-small text-muted&quot;&gt;次卡从实际激活日起算 30 天&lt;/span&gt;&lt;/div&gt;
-    &lt;div class=&quot;plan-grid&quot;&gt;
-      &lt;div class=&quot;plan-inputs&quot;&gt;
-        &lt;div class=&quot;field validity-field&quot;&gt;&lt;span class=&quot;form-label&quot;&gt;次卡有效期&lt;/span&gt;&lt;div class=&quot;validity-range&quot;&gt;&lt;label class=&quot;field&quot;&gt;&lt;span class=&quot;text-small text-muted&quot;&gt;开始日期&lt;/span&gt;&lt;input id=&quot;sh-date&quot; class=&quot;form-control&quot; type=&quot;date&quot; min=&quot;2026-12-01&quot; max=&quot;2027-12-02&quot; value=&quot;2026-12-01&quot;&gt;&lt;/label&gt;&lt;label class=&quot;field&quot;&gt;&lt;span class=&quot;text-small text-muted&quot;&gt;结束日期&lt;/span&gt;&lt;input id=&quot;sh-end-date&quot; class=&quot;form-control&quot; type=&quot;date&quot; value=&quot;2026-12-30&quot; readonly aria-readonly=&quot;true&quot;&gt;&lt;/label&gt;&lt;/div&gt;&lt;span class=&quot;text-small text-muted&quot;&gt;开始日期由你选择，结束日期按 30 天自动计算&lt;/span&gt;&lt;/div&gt;
-        &lt;div class=&quot;ride-settings&quot;&gt;
-          &lt;label class=&quot;field&quot;&gt;&lt;span class=&quot;form-label&quot;&gt;每日次数&lt;/span&gt;&lt;input id=&quot;sh-rides-per-day&quot; class=&quot;form-control&quot; type=&quot;number&quot; min=&quot;1&quot; max=&quot;10&quot; step=&quot;1&quot; value=&quot;2&quot;&gt;&lt;/label&gt;
-          &lt;label class=&quot;field&quot;&gt;&lt;span class=&quot;form-label&quot;&gt;额外次数&lt;/span&gt;&lt;input id=&quot;sh-extra-rides&quot; class=&quot;form-control&quot; type=&quot;number&quot; min=&quot;0&quot; max=&quot;150&quot; step=&quot;1&quot; value=&quot;0&quot;&gt;&lt;span class=&quot;text-small text-muted&quot;&gt;均匀计入已选日期&lt;/span&gt;&lt;/label&gt;
-          &lt;label class=&quot;field&quot;&gt;&lt;span class=&quot;form-label&quot;&gt;此前月内车费（元）&lt;/span&gt;&lt;input id=&quot;sh-prior&quot; class=&quot;form-control&quot; type=&quot;number&quot; min=&quot;0&quot; max=&quot;10000&quot; step=&quot;0.1&quot; value=&quot;0&quot;&gt;&lt;/label&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;card viz-stat total-summary&quot; aria-live=&quot;polite&quot;&gt;&lt;span class=&quot;text-muted&quot;&gt;总乘车次数&lt;/span&gt;&lt;strong id=&quot;sh-total-rides&quot; class=&quot;viz-stat-value tabular-nums&quot;&gt;44 次&lt;/strong&gt;&lt;span id=&quot;sh-total-formula&quot; class=&quot;total-formula text-small&quot;&gt;22 天 × 2 + 0 = 44 次&lt;/span&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-  &lt;datalist id=&quot;sh-stations&quot;&gt;&lt;/datalist&gt;
-  &lt;p id=&quot;sh-validation&quot; class=&quot;text-destructive&quot; role=&quot;alert&quot; hidden&gt;&lt;/p&gt;
-  &lt;section class=&quot;calendar-section&quot; aria-labelledby=&quot;sh-calendar-title&quot;&gt;
-    &lt;div class=&quot;calendar-head&quot;&gt;&lt;div&gt;&lt;h2 id=&quot;sh-calendar-title&quot;&gt;多选乘车日期&lt;/h2&gt;&lt;span id=&quot;sh-calendar-summary&quot; class=&quot;text-small text-muted&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;calendar-actions&quot;&gt;&lt;button id=&quot;sh-select-workdays&quot; class=&quot;btn&quot; type=&quot;button&quot;&gt;仅选工作日&lt;/button&gt;&lt;button id=&quot;sh-clear-days&quot; class=&quot;btn btn-ghost&quot; type=&quot;button&quot;&gt;清空&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;
-    &lt;div class=&quot;calendar-toolbar&quot;&gt;&lt;button id=&quot;sh-prev-month&quot; class=&quot;btn btn-ghost&quot; type=&quot;button&quot; aria-label=&quot;上个月&quot;&gt;&lt;i data-lucide=&quot;chevron-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/button&gt;&lt;strong id=&quot;sh-calendar-month&quot; class=&quot;calendar-month&quot;&gt;&lt;/strong&gt;&lt;button id=&quot;sh-next-month&quot; class=&quot;btn btn-ghost&quot; type=&quot;button&quot; aria-label=&quot;下个月&quot;&gt;&lt;i data-lucide=&quot;chevron-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/button&gt;&lt;/div&gt;
-    &lt;div class=&quot;calendar-weekdays text-small&quot; aria-hidden=&quot;true&quot;&gt;&lt;span&gt;一&lt;/span&gt;&lt;span&gt;二&lt;/span&gt;&lt;span&gt;三&lt;/span&gt;&lt;span&gt;四&lt;/span&gt;&lt;span&gt;五&lt;/span&gt;&lt;span&gt;六&lt;/span&gt;&lt;span&gt;日&lt;/span&gt;&lt;/div&gt;
-    &lt;div id=&quot;sh-calendar-grid&quot; class=&quot;calendar-grid&quot; role=&quot;grid&quot; aria-label=&quot;多选乘车日期&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;calendar-legend text-small&quot;&gt;&lt;span class=&quot;legend-item&quot;&gt;&lt;span class=&quot;legend-mark makeup&quot;&gt;&lt;/span&gt;调休上班&lt;/span&gt;&lt;span class=&quot;legend-item&quot;&gt;&lt;span class=&quot;legend-mark holiday&quot;&gt;&lt;/span&gt;法定放假&lt;/span&gt;&lt;span class=&quot;legend-item&quot;&gt;&lt;span class=&quot;legend-mark&quot;&gt;&lt;/span&gt;周末&lt;/span&gt;&lt;span&gt;所有月份均可多选；次卡期外乘车自动按次计费&lt;/span&gt;&lt;/div&gt;
-  &lt;/section&gt;
-  &lt;div id=&quot;sh-output&quot; aria-live=&quot;polite&quot;&gt;
-    &lt;div class=&quot;summary&quot;&gt;
-      &lt;div class=&quot;card viz-stat&quot;&gt;&lt;span class=&quot;text-muted&quot;&gt;最省方案&lt;/span&gt;&lt;strong class=&quot;viz-stat-value&quot; id=&quot;sh-best-name&quot;&gt;&lt;/strong&gt;&lt;span id=&quot;sh-best-detail&quot; class=&quot;text-small text-muted&quot;&gt;&lt;/span&gt;&lt;/div&gt;
-      &lt;div class=&quot;card viz-stat&quot;&gt;&lt;span class=&quot;text-muted&quot;&gt;预计总费用&lt;/span&gt;&lt;strong class=&quot;viz-stat-value tabular-nums&quot; id=&quot;sh-best-cost&quot;&gt;&lt;/strong&gt;&lt;span class=&quot;text-small text-muted&quot;&gt;所选 30 天有效期&lt;/span&gt;&lt;/div&gt;
-      &lt;div class=&quot;card viz-stat&quot;&gt;&lt;span class=&quot;text-muted&quot;&gt;比按次支付节省&lt;/span&gt;&lt;strong class=&quot;viz-stat-value tabular-nums&quot; id=&quot;sh-saving&quot;&gt;&lt;/strong&gt;&lt;span class=&quot;text-small text-muted&quot;&gt;已计入满额后 9 折&lt;/span&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;section class=&quot;result&quot;&gt;
-      &lt;div class=&quot;result-head&quot;&gt;&lt;h2&gt;方案比较&lt;/h2&gt;&lt;span id=&quot;sh-window&quot; class=&quot;text-small text-muted&quot;&gt;&lt;/span&gt;&lt;/div&gt;
-      &lt;div class=&quot;table-responsive&quot;&gt;&lt;table class=&quot;table table-sm plan-table&quot;&gt;&lt;colgroup&gt;&lt;col style=&quot;width: 31%&quot;&gt;&lt;col style=&quot;width: 14%&quot;&gt;&lt;col style=&quot;width: 14%&quot;&gt;&lt;col style=&quot;width: 15%&quot;&gt;&lt;col style=&quot;width: 14%&quot;&gt;&lt;col style=&quot;width: 12%&quot;&gt;&lt;/colgroup&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;方式&lt;/th&gt;&lt;th&gt;次卡费用&lt;/th&gt;&lt;th&gt;按次费用&lt;/th&gt;&lt;th&gt;总费用&lt;/th&gt;&lt;th&gt;平均每次&lt;/th&gt;&lt;th&gt;未用次数&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody id=&quot;sh-rows&quot;&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;
-    &lt;/section&gt;
-  &lt;/div&gt;
-  &lt;section class=&quot;notes text-small&quot;&gt;
-    &lt;h2&gt;适用范围与局限&lt;/h2&gt;
-    &lt;p&gt;次卡：35 次 190 元、45 次 210 元、60 次 270 元、90 次 390 元；有效期从实际激活日起算，与购买日期无关，覆盖激活当日及之后 30 个自然日运营时段。仅覆盖城轨线，磁浮线、金山铁路、市域机场线及以后开通的市域线不适用。未用次数不退款，超出套餐的行程另行付费。&lt;/p&gt;
-    &lt;p&gt;按次支付：同一自然月、同一支付渠道累计满 90 元后，后续票价 9 折；跨月重新累计。更灵活，但 2026 年 12 月起须按新票价支付，不能继续按旧票价乘坐。&lt;/p&gt;
-    &lt;p&gt;本计算按日历中选中的实际乘车日期比较一张次卡加超额按次支付。表中的总费用已包含超出次卡次数的按次支付费用。其他线路消费及次卡发行渠道规则可能改变结果。次卡购买金额不计入按次乘车的满额累计。&lt;/p&gt;
-    &lt;p id=&quot;sh-fare-source&quot; class=&quot;text-muted&quot;&gt;&lt;/p&gt;
-    &lt;div class=&quot;source&quot;&gt;&lt;a href=&quot;https://fgw.sh.gov.cn/fgw_jjjctk/20261123/f57b63885c514c829ee269ed589ab2b9.html&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;新票价政策&lt;/a&gt;&lt;a href=&quot;https://www.gov.cn/zhengce/content/202511/content_7047090.htm&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;2026 节假日&lt;/a&gt;&lt;a href=&quot;https://www.gov.cn/zhengce/zhengceku/202611/content_7085102.htm&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;2027 节假日&lt;/a&gt;&lt;/div&gt;
-  &lt;/section&gt;
-  &lt;script&gt;
-    (() =&gt; {
-      const root = document.getElementById(&#x27;sh-metro-planner&#x27;);
+  </style>
+  <div class="intro">
+    <h1>上海地铁怎么坐更省</h1>
+    <p class="text-muted">起终站与票价保存在本地，按 2026 年 12 月 1 日起的优惠规则比较。</p>
+  </div>
+  <hr>
+  <section class="form-section" aria-labelledby="sh-route-title">
+    <div class="section-head"><h2 id="sh-route-title">路线与票价</h2><span class="text-small text-muted">票价可手动填写，也可自动查询</span></div>
+    <div class="route-grid">
+      <label class="field"><span class="form-label">出发站</span><input id="sh-origin" class="form-control" list="sh-stations" value="下沙" autocomplete="off"></label>
+      <label class="field"><span class="form-label">到达站</span><input id="sh-destination" class="form-control" list="sh-stations" value="张江高科" autocomplete="off"></label>
+      <div class="field fare-field"><label class="form-label" for="sh-fare">单程新票价（元）</label><div class="fare-entry"><input id="sh-fare" class="form-control" type="number" min="3" max="30" step="1" value="7" aria-label="手动输入单程新票价"><button id="sh-query-fare" class="btn btn-primary" type="button"><i data-lucide="cloud-download" aria-hidden="true"></i><span id="sh-query-label">查询票价</span></button></div><span id="sh-query-status" class="fare-status text-small text-muted" aria-live="polite"></span></div>
+    </div>
+  </section>
+  <hr>
+  <section class="form-section" aria-labelledby="sh-plan-title">
+    <div class="section-head"><h2 id="sh-plan-title">乘车计划</h2><span class="text-small text-muted">次卡从实际激活日起算 30 天</span></div>
+    <div class="plan-grid">
+      <div class="plan-inputs">
+        <div class="field validity-field"><span class="form-label">次卡有效期</span><div class="validity-range"><label class="field"><span class="text-small text-muted">开始日期</span><input id="sh-date" class="form-control" type="date" min="2026-12-01" max="2027-12-02" value="2026-12-01"></label><label class="field"><span class="text-small text-muted">结束日期</span><input id="sh-end-date" class="form-control" type="date" value="2026-12-30" readonly aria-readonly="true"></label></div><span class="text-small text-muted">开始日期由你选择，结束日期按 30 天自动计算</span></div>
+        <div class="ride-settings">
+          <label class="field"><span class="form-label">每日次数</span><input id="sh-rides-per-day" class="form-control" type="number" min="1" max="10" step="1" value="2"></label>
+          <label class="field"><span class="form-label">额外次数</span><input id="sh-extra-rides" class="form-control" type="number" min="0" max="150" step="1" value="0"><span class="text-small text-muted">均匀计入已选日期</span></label>
+          <label class="field"><span class="form-label">此前月内车费（元）</span><input id="sh-prior" class="form-control" type="number" min="0" max="10000" step="0.1" value="0"></label>
+        </div>
+      </div>
+      <div class="card viz-stat total-summary" aria-live="polite"><span class="text-muted">总乘车次数</span><strong id="sh-total-rides" class="viz-stat-value tabular-nums">44 次</strong><span id="sh-total-formula" class="total-formula text-small">22 天 × 2 + 0 = 44 次</span></div>
+    </div>
+  </section>
+  <datalist id="sh-stations"></datalist>
+  <p id="sh-validation" class="text-destructive" role="alert" hidden></p>
+  <section class="calendar-section" aria-labelledby="sh-calendar-title">
+    <div class="calendar-head"><div><h2 id="sh-calendar-title">多选乘车日期</h2><span id="sh-calendar-summary" class="text-small text-muted"></span></div><div class="calendar-actions"><button id="sh-select-workdays" class="btn" type="button">仅选工作日</button><button id="sh-clear-days" class="btn btn-ghost" type="button">清空</button></div></div>
+    <div class="calendar-toolbar"><button id="sh-prev-month" class="btn btn-ghost" type="button" aria-label="上个月"><i data-lucide="chevron-left" aria-hidden="true"></i></button><strong id="sh-calendar-month" class="calendar-month"></strong><button id="sh-next-month" class="btn btn-ghost" type="button" aria-label="下个月"><i data-lucide="chevron-right" aria-hidden="true"></i></button></div>
+    <div class="calendar-weekdays text-small" aria-hidden="true"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span></div>
+    <div id="sh-calendar-grid" class="calendar-grid" role="grid" aria-label="多选乘车日期"></div>
+    <div class="calendar-legend text-small"><span class="legend-item"><span class="legend-mark makeup"></span>调休上班</span><span class="legend-item"><span class="legend-mark holiday"></span>法定放假</span><span class="legend-item"><span class="legend-mark"></span>周末</span><span>所有月份均可多选；次卡期外乘车自动按次计费</span></div>
+  </section>
+  <div id="sh-output" aria-live="polite">
+    <div class="summary">
+      <div class="card viz-stat"><span class="text-muted">最省方案</span><strong class="viz-stat-value" id="sh-best-name"></strong><span id="sh-best-detail" class="text-small text-muted"></span></div>
+      <div class="card viz-stat"><span class="text-muted">预计总费用</span><strong class="viz-stat-value tabular-nums" id="sh-best-cost"></strong><span class="text-small text-muted">所选 30 天有效期</span></div>
+      <div class="card viz-stat"><span class="text-muted">比按次支付节省</span><strong class="viz-stat-value tabular-nums" id="sh-saving"></strong><span class="text-small text-muted">已计入满额后 9 折</span></div>
+    </div>
+    <section class="result">
+      <div class="result-head"><h2>方案比较</h2><span id="sh-window" class="text-small text-muted"></span></div>
+      <div class="table-responsive"><table class="table table-sm plan-table"><colgroup><col style="width: 31%"><col style="width: 14%"><col style="width: 14%"><col style="width: 15%"><col style="width: 14%"><col style="width: 12%"></colgroup><thead><tr><th>方式</th><th>次卡费用</th><th>按次费用</th><th>总费用</th><th>平均每次</th><th>未用次数</th></tr></thead><tbody id="sh-rows"></tbody></table></div>
+    </section>
+  </div>
+  <section class="notes text-small">
+    <h2>适用范围与局限</h2>
+    <p>次卡：35 次 190 元、45 次 210 元、60 次 270 元、90 次 390 元；有效期从实际激活日起算，与购买日期无关，覆盖激活当日及之后 30 个自然日运营时段。仅覆盖城轨线，磁浮线、金山铁路、市域机场线及以后开通的市域线不适用。未用次数不退款，超出套餐的行程另行付费。</p>
+    <p>按次支付：同一自然月、同一支付渠道累计满 90 元后，后续票价 9 折；跨月重新累计。更灵活，但 2026 年 12 月起须按新票价支付，不能继续按旧票价乘坐。</p>
+    <p>本计算按日历中选中的实际乘车日期比较一张次卡加超额按次支付。表中的总费用已包含超出次卡次数的按次支付费用。其他线路消费及次卡发行渠道规则可能改变结果。次卡购买金额不计入按次乘车的满额累计。</p>
+    <p id="sh-fare-source" class="text-muted"></p>
+    <div class="source"><a href="https://fgw.sh.gov.cn/fgw_jjjctk/20261123/f57b63885c514c829ee269ed589ab2b9.html" target="_blank" rel="noopener noreferrer">新票价政策</a><a href="https://www.gov.cn/zhengce/content/202511/content_7047090.htm" target="_blank" rel="noopener noreferrer">2026 节假日</a><a href="https://www.gov.cn/zhengce/zhengceku/202611/content_7085102.htm" target="_blank" rel="noopener noreferrer">2027 节假日</a></div>
+  </section>
+  <script>
+    (() => {
+      const root = document.getElementById('sh-metro-planner');
       const lines = [
-        &#x27;莘庄|外环路|莲花路|锦江乐园|上海南站|漕宝路|上海体育馆|徐家汇|衡山路|常熟路|陕西南路|一大会址·黄陂南路|人民广场|新闸路|汉中路|上海火车站|中山北路|延长路|上海马戏城|汶水路|彭浦新村|共康路|通河新村|呼兰路|共富新村|宝安公路|友谊西路|富锦路&#x27;,
-        &#x27;蟠祥路·国家会计学院|国家会展中心|虹桥火车站|虹桥2号航站楼|淞虹路|北新泾|威宁路|娄山关路|中山公园|江苏路|静安寺|南京西路|人民广场|南京东路|陆家嘴|浦东南路|世纪大道|上海科技馆|世纪公园|龙阳路|张江高科|金科路|广兰路|唐镇|创新中路|华夏东路|川沙|凌空路|远东大道|海天三路|浦东1号2号航站楼&#x27;,
-        &#x27;上海南站|石龙路|龙漕路|漕溪路|宜山路|虹桥路|延安西路|中山公园|金沙江路|曹杨路|镇坪路|中潭路|上海火车站|宝山路|东宝兴路|虹口足球场|赤峰路|大柏树|江湾镇|殷高西路|长江南路|淞发路|张华浜|淞滨路|水产路|宝杨路|友谊路|铁力路|江杨北路&#x27;,
-        &#x27;上海体育馆|宜山路|虹桥路|延安西路|中山公园|金沙江路|曹杨路|镇坪路|中潭路|上海火车站|宝山路|海伦路|临平路|大连路|杨树浦路|浦东大道|世纪大道|向城路|蓝村路|塘桥|南浦大桥|西藏南路|鲁班路|大木桥路|东安路|上海体育场&#x27;,
-        &#x27;莘庄|春申路|银都路|颛桥|北桥|剑川路|东川路|金平路|华宁路|文井路|闵行开发区|江川路|西渡|萧塘|奉浦大道|环城东路|望园路|金海湖|奉贤新城&#x27;,
-        &#x27;东方体育中心|灵岩南路|上南路|华夏西路|高青路|东明路|高科西路|临沂新村|上海儿童医学中心|蓝村路|浦电路|世纪大道|源深体育中心|民生路|北洋泾路|德平路|云山路|金桥路|博兴路|五莲路|巨峰路|东靖路|五洲大道|洲海路|外高桥保税区南|航津路|外高桥保税区北|港城路&#x27;,
-        &#x27;美兰湖|罗南新村|潘广路|刘行|顾村公园|祁华路|上海大学|南陈路|上大路|场中路|大场镇|行知路|大华三路|新村路|岚皋路|镇坪路|长寿路|昌平路|静安寺|常熟路|肇嘉浜路|东安路|龙华中路|后滩|长清路|耀华路|云台路|高科西路|杨高南路|锦绣路|芳华路|龙阳路|花木路&#x27;,
-        &#x27;沈杜公路|联航路|江月路|浦江镇|芦恒路|凌兆新村|东方体育中心|杨思|成山路|耀华路|中华艺术宫|西藏南路|陆家浜路|老西门|大世界|人民广场|曲阜路|中兴路|西藏北路|虹口足球场|曲阳路|四平路|鞍山新村|江浦路|黄兴路|延吉中路|黄兴公园|翔殷路|嫩江路|市光路&#x27;,
-        &#x27;上海松江站|醉白池|松江体育中心|松江新城|松江大学城|洞泾|佘山|泗泾|九亭|中春路|七宝|星中路|合川路|漕河泾开发区|桂林路|宜山路|徐家汇|肇嘉浜路|嘉善路|打浦桥|马当路|陆家浜路|小南门|商城路|世纪大道|杨高中路|芳甸路|蓝天路|台儿庄路|金桥|金吉路|金海路|顾唐路|民雷路|曹路&#x27;,
-        &#x27;航中路|紫藤路|龙柏新村|虹桥火车站|虹桥2号航站楼|虹桥1号航站楼|上海动物园|龙溪路|水城路|伊犁路|宋园路|虹桥路|交通大学|上海图书馆|陕西南路|一大会址·新天地|老西门|豫园|南京东路|天潼路|四川北路|海伦路|邮电新村|四平路|同济大学|国权路|五角场|江湾体育场|三门路|殷高东路|新江湾城|国帆路|双江路|高桥西|高桥|港城路|基隆路&#x27;,
-        &#x27;花桥|光明路|兆丰路|安亭|上海汽车城|昌吉东路|上海赛车场|嘉定北|嘉定西|白银路|嘉定新城|马陆|陈翔公路|南翔|桃浦新村|武威路|祁连山路|李子园|上海西站|真如|枫桥路|曹杨路|隆德路|江苏路|交通大学|徐家汇|上海游泳馆|龙华|云锦路|龙耀路|东方体育中心|三林|三林东|浦三路|康恒路|御桥|罗山路|秀沿路|康新公路|迪士尼&#x27;,
-        &#x27;七莘路|虹莘路|顾戴路|东兰路|虹梅路|虹漕路|桂林公园|漕宝路|龙漕路|龙华|龙华中路|大木桥路|嘉善路|陕西南路|南京西路|汉中路|曲阜路|天潼路|国际客运中心|提篮桥|大连路|江浦公园|宁国路|隆昌路|爱国路|复兴岛|东陆路|巨峰路|杨高北路|金京路|申江路|金海路&#x27;,
-        &#x27;金运路|金沙江西路|丰庄|祁连山南路|真北路|大渡河路|金沙江路|隆德路|武宁路|长寿路|江宁路|汉中路|自然博物馆|南京西路|淮海中路|一大会址·新天地|马当路|世博会博物馆|世博大道|长清路|成山路|东明路|华鹏路|下南路|北蔡|陈春路|莲溪路|华夏中路|中科路|学林路|张江路&#x27;,
-        &#x27;封浜|乐秀路|临洮路|嘉怡路|定边路|真新新村|真光路|铜川路|真如|中宁路|曹杨路|武宁路|武定路|静安寺|一大会址·黄陂南路|大世界|豫园|陆家嘴|浦东南路|浦东大道|源深路|昌邑路|歇浦路|云山路|蓝天路|黄杨路|云顺路|浦东足球场|金粤路|桂桥路&#x27;,
-        &#x27;紫竹高新区|永德路|元江路|双柏路|曙建路|景西路|虹梅南路|景洪路|朱梅路|罗秀路|华东理工大学|上海南站|桂林公园|桂林路|吴中路|姚虹路|红宝石路|娄山关路|长风公园|大渡河路|梅岭北路|铜川路|上海西站|武威东路|古浪路|祁安路|南大路|丰翔路|锦秋路|顾村公园&#x27;,
-        &#x27;龙阳路|华夏中路|罗山路|周浦东|鹤沙航城|航头东|新场|野生动物园|惠南|惠南东|书院|临港大道|滴水湖&#x27;,
-        &#x27;虹桥火车站|国家会展中心|蟠龙路|徐盈路|徐泾北城|嘉松中路|赵巷|汇金路|青浦新城|漕盈路|淀山湖大道|朱家角|东方绿舟|西岑&#x27;,
-        &#x27;航头|下沙|鹤涛路|沈梅路|繁荣路|周浦|康桥|御桥|莲溪路|北中路|芳芯路|龙阳路|迎春路|杨高中路|民生路|昌邑路|丹阳路|平凉路|江浦公园|江浦路|抚顺路|国权路|复旦大学|上海财经大学|殷高路|长江南路|通南路|长江西路|爱辉路|呼兰路|康文路&#x27;,
-        &#x27;沈杜公路|三鲁公路|闵瑞路|浦航路|东城一路|汇臻路&#x27;
+        '莘庄|外环路|莲花路|锦江乐园|上海南站|漕宝路|上海体育馆|徐家汇|衡山路|常熟路|陕西南路|一大会址·黄陂南路|人民广场|新闸路|汉中路|上海火车站|中山北路|延长路|上海马戏城|汶水路|彭浦新村|共康路|通河新村|呼兰路|共富新村|宝安公路|友谊西路|富锦路',
+        '蟠祥路·国家会计学院|国家会展中心|虹桥火车站|虹桥2号航站楼|淞虹路|北新泾|威宁路|娄山关路|中山公园|江苏路|静安寺|南京西路|人民广场|南京东路|陆家嘴|浦东南路|世纪大道|上海科技馆|世纪公园|龙阳路|张江高科|金科路|广兰路|唐镇|创新中路|华夏东路|川沙|凌空路|远东大道|海天三路|浦东1号2号航站楼',
+        '上海南站|石龙路|龙漕路|漕溪路|宜山路|虹桥路|延安西路|中山公园|金沙江路|曹杨路|镇坪路|中潭路|上海火车站|宝山路|东宝兴路|虹口足球场|赤峰路|大柏树|江湾镇|殷高西路|长江南路|淞发路|张华浜|淞滨路|水产路|宝杨路|友谊路|铁力路|江杨北路',
+        '上海体育馆|宜山路|虹桥路|延安西路|中山公园|金沙江路|曹杨路|镇坪路|中潭路|上海火车站|宝山路|海伦路|临平路|大连路|杨树浦路|浦东大道|世纪大道|向城路|蓝村路|塘桥|南浦大桥|西藏南路|鲁班路|大木桥路|东安路|上海体育场',
+        '莘庄|春申路|银都路|颛桥|北桥|剑川路|东川路|金平路|华宁路|文井路|闵行开发区|江川路|西渡|萧塘|奉浦大道|环城东路|望园路|金海湖|奉贤新城',
+        '东方体育中心|灵岩南路|上南路|华夏西路|高青路|东明路|高科西路|临沂新村|上海儿童医学中心|蓝村路|浦电路|世纪大道|源深体育中心|民生路|北洋泾路|德平路|云山路|金桥路|博兴路|五莲路|巨峰路|东靖路|五洲大道|洲海路|外高桥保税区南|航津路|外高桥保税区北|港城路',
+        '美兰湖|罗南新村|潘广路|刘行|顾村公园|祁华路|上海大学|南陈路|上大路|场中路|大场镇|行知路|大华三路|新村路|岚皋路|镇坪路|长寿路|昌平路|静安寺|常熟路|肇嘉浜路|东安路|龙华中路|后滩|长清路|耀华路|云台路|高科西路|杨高南路|锦绣路|芳华路|龙阳路|花木路',
+        '沈杜公路|联航路|江月路|浦江镇|芦恒路|凌兆新村|东方体育中心|杨思|成山路|耀华路|中华艺术宫|西藏南路|陆家浜路|老西门|大世界|人民广场|曲阜路|中兴路|西藏北路|虹口足球场|曲阳路|四平路|鞍山新村|江浦路|黄兴路|延吉中路|黄兴公园|翔殷路|嫩江路|市光路',
+        '上海松江站|醉白池|松江体育中心|松江新城|松江大学城|洞泾|佘山|泗泾|九亭|中春路|七宝|星中路|合川路|漕河泾开发区|桂林路|宜山路|徐家汇|肇嘉浜路|嘉善路|打浦桥|马当路|陆家浜路|小南门|商城路|世纪大道|杨高中路|芳甸路|蓝天路|台儿庄路|金桥|金吉路|金海路|顾唐路|民雷路|曹路',
+        '航中路|紫藤路|龙柏新村|虹桥火车站|虹桥2号航站楼|虹桥1号航站楼|上海动物园|龙溪路|水城路|伊犁路|宋园路|虹桥路|交通大学|上海图书馆|陕西南路|一大会址·新天地|老西门|豫园|南京东路|天潼路|四川北路|海伦路|邮电新村|四平路|同济大学|国权路|五角场|江湾体育场|三门路|殷高东路|新江湾城|国帆路|双江路|高桥西|高桥|港城路|基隆路',
+        '花桥|光明路|兆丰路|安亭|上海汽车城|昌吉东路|上海赛车场|嘉定北|嘉定西|白银路|嘉定新城|马陆|陈翔公路|南翔|桃浦新村|武威路|祁连山路|李子园|上海西站|真如|枫桥路|曹杨路|隆德路|江苏路|交通大学|徐家汇|上海游泳馆|龙华|云锦路|龙耀路|东方体育中心|三林|三林东|浦三路|康恒路|御桥|罗山路|秀沿路|康新公路|迪士尼',
+        '七莘路|虹莘路|顾戴路|东兰路|虹梅路|虹漕路|桂林公园|漕宝路|龙漕路|龙华|龙华中路|大木桥路|嘉善路|陕西南路|南京西路|汉中路|曲阜路|天潼路|国际客运中心|提篮桥|大连路|江浦公园|宁国路|隆昌路|爱国路|复兴岛|东陆路|巨峰路|杨高北路|金京路|申江路|金海路',
+        '金运路|金沙江西路|丰庄|祁连山南路|真北路|大渡河路|金沙江路|隆德路|武宁路|长寿路|江宁路|汉中路|自然博物馆|南京西路|淮海中路|一大会址·新天地|马当路|世博会博物馆|世博大道|长清路|成山路|东明路|华鹏路|下南路|北蔡|陈春路|莲溪路|华夏中路|中科路|学林路|张江路',
+        '封浜|乐秀路|临洮路|嘉怡路|定边路|真新新村|真光路|铜川路|真如|中宁路|曹杨路|武宁路|武定路|静安寺|一大会址·黄陂南路|大世界|豫园|陆家嘴|浦东南路|浦东大道|源深路|昌邑路|歇浦路|云山路|蓝天路|黄杨路|云顺路|浦东足球场|金粤路|桂桥路',
+        '紫竹高新区|永德路|元江路|双柏路|曙建路|景西路|虹梅南路|景洪路|朱梅路|罗秀路|华东理工大学|上海南站|桂林公园|桂林路|吴中路|姚虹路|红宝石路|娄山关路|长风公园|大渡河路|梅岭北路|铜川路|上海西站|武威东路|古浪路|祁安路|南大路|丰翔路|锦秋路|顾村公园',
+        '龙阳路|华夏中路|罗山路|周浦东|鹤沙航城|航头东|新场|野生动物园|惠南|惠南东|书院|临港大道|滴水湖',
+        '虹桥火车站|国家会展中心|蟠龙路|徐盈路|徐泾北城|嘉松中路|赵巷|汇金路|青浦新城|漕盈路|淀山湖大道|朱家角|东方绿舟|西岑',
+        '航头|下沙|鹤涛路|沈梅路|繁荣路|周浦|康桥|御桥|莲溪路|北中路|芳芯路|龙阳路|迎春路|杨高中路|民生路|昌邑路|丹阳路|平凉路|江浦公园|江浦路|抚顺路|国权路|复旦大学|上海财经大学|殷高路|长江南路|通南路|长江西路|爱辉路|呼兰路|康文路',
+        '沈杜公路|三鲁公路|闵瑞路|浦航路|东城一路|汇臻路'
       ];
       function stationCode(lineIndex, stationIndex) {
-        const continuous = [&#x27;0111&#x27;, &#x27;0233&#x27;, &#x27;0311&#x27;, &#x27;0401&#x27;, null, &#x27;0621&#x27;, &#x27;0721&#x27;, &#x27;0820&#x27;, &#x27;0918&#x27;, null, null, &#x27;1220&#x27;, &#x27;1321&#x27;, null, &#x27;1521&#x27;, &#x27;1621&#x27;, &#x27;1721&#x27;, null, &#x27;4101&#x27;];
-        if (continuous[lineIndex]) return String(Number(continuous[lineIndex]) + stationIndex).padStart(4, &#x27;0&#x27;);
-        if (lineIndex === 4) return String(stationIndex &lt; 12 ? 501 + stationIndex : 531 + stationIndex - 12).padStart(4, &#x27;0&#x27;);
-        if (lineIndex === 9) return String(stationIndex &lt; 3 ? 1018 + stationIndex : 1041 + stationIndex - 3);
-        if (lineIndex === 10) return String(stationIndex &lt; 7 ? 1114 + stationIndex : 1131 + stationIndex - 7);
-        if (lineIndex === 13) return String(stationIndex &lt; 23 ? 1421 + stationIndex : 1445 + stationIndex - 23);
-        if (lineIndex === 17) return String(stationIndex &lt; 28 ? 1821 + stationIndex : 1850 + stationIndex - 28);
-        return &#x27;&#x27;;
+        const continuous = ['0111', '0233', '0311', '0401', null, '0621', '0721', '0820', '0918', null, null, '1220', '1321', null, '1521', '1621', '1721', null, '4101'];
+        if (continuous[lineIndex]) return String(Number(continuous[lineIndex]) + stationIndex).padStart(4, '0');
+        if (lineIndex === 4) return String(stationIndex < 12 ? 501 + stationIndex : 531 + stationIndex - 12).padStart(4, '0');
+        if (lineIndex === 9) return String(stationIndex < 3 ? 1018 + stationIndex : 1041 + stationIndex - 3);
+        if (lineIndex === 10) return String(stationIndex < 7 ? 1114 + stationIndex : 1131 + stationIndex - 7);
+        if (lineIndex === 13) return String(stationIndex < 23 ? 1421 + stationIndex : 1445 + stationIndex - 23);
+        if (lineIndex === 17) return String(stationIndex < 28 ? 1821 + stationIndex : 1850 + stationIndex - 28);
+        return '';
       }
-      const stations = [...new Set(lines.flatMap(line =&gt; line.split(&#x27;|&#x27;)))].sort((a, b) =&gt; a.localeCompare(b, &#x27;zh-CN&#x27;));
+      const stations = [...new Set(lines.flatMap(line => line.split('|')))].sort((a, b) => a.localeCompare(b, 'zh-CN'));
       const stationSet = new Set(stations);
       const codesByName = new Map();
-      lines.forEach((line, lineIndex) =&gt; line.split(&#x27;|&#x27;).forEach((name, stationIndex) =&gt; {
+      lines.forEach((line, lineIndex) => line.split('|').forEach((name, stationIndex) => {
         if (!codesByName.has(name)) codesByName.set(name, []);
         codesByName.get(name).push(stationCode(lineIndex, stationIndex));
       }));
-      const list = root.querySelector(&#x27;#sh-stations&#x27;);
-      stations.forEach(name =&gt; { const option = document.createElement(&#x27;option&#x27;); option.value = name; list.append(option); });
-      const $ = id =&gt; root.querySelector(&#x27;#sh-&#x27; + id);
-      const fields = [&#x27;origin&#x27;, &#x27;destination&#x27;, &#x27;fare&#x27;, &#x27;rides-per-day&#x27;, &#x27;extra-rides&#x27;, &#x27;date&#x27;, &#x27;prior&#x27;];
-      const builtInFares = { &#x27;下沙|张江高科&#x27;: 7 };
-      const fareKey = (a, b) =&gt; [a, b].sort((x, y) =&gt; x.localeCompare(y, &#x27;zh-CN&#x27;)).join(&#x27;|&#x27;);
-      const dateKey = date =&gt; [date.getFullYear(), String(date.getMonth() + 1).padStart(2, &#x27;0&#x27;), String(date.getDate()).padStart(2, &#x27;0&#x27;)].join(&#x27;-&#x27;);
-      let saved = {}, selectedDates = new Set(), calendarMonth = new Date(2026, 11, 1), fareSourceMode = &#x27;built-in&#x27;;
+      const list = root.querySelector('#sh-stations');
+      stations.forEach(name => { const option = document.createElement('option'); option.value = name; list.append(option); });
+      const $ = id => root.querySelector('#sh-' + id);
+      const fields = ['origin', 'destination', 'fare', 'rides-per-day', 'extra-rides', 'date', 'prior'];
+      const builtInFares = { '下沙|张江高科': 7 };
+      const fareKey = (a, b) => [a, b].sort((x, y) => x.localeCompare(y, 'zh-CN')).join('|');
+      const dateKey = date => [date.getFullYear(), String(date.getMonth() + 1).padStart(2, '0'), String(date.getDate()).padStart(2, '0')].join('-');
+      let saved = {}, selectedDates = new Set(), calendarMonth = new Date(2026, 11, 1), fareSourceMode = 'built-in';
       const holidayDays = new Map(), makeupDays = new Map();
       function addHolidayRange(startText, endText, label) {
-        const day = new Date(startText + &#x27;T12:00:00&#x27;), end = new Date(endText + &#x27;T12:00:00&#x27;);
-        while (day &lt;= end) { holidayDays.set(dateKey(day), label); day.setDate(day.getDate() + 1); }
+        const day = new Date(startText + 'T12:00:00'), end = new Date(endText + 'T12:00:00');
+        while (day <= end) { holidayDays.set(dateKey(day), label); day.setDate(day.getDate() + 1); }
       }
-      addHolidayRange(&#x27;2026-01-01&#x27;, &#x27;2026-01-03&#x27;, &#x27;元旦&#x27;);
-      addHolidayRange(&#x27;2026-02-15&#x27;, &#x27;2026-02-23&#x27;, &#x27;春节&#x27;);
-      addHolidayRange(&#x27;2026-04-04&#x27;, &#x27;2026-04-06&#x27;, &#x27;清明&#x27;);
-      addHolidayRange(&#x27;2026-05-01&#x27;, &#x27;2026-05-05&#x27;, &#x27;劳动节&#x27;);
-      addHolidayRange(&#x27;2026-06-19&#x27;, &#x27;2026-06-21&#x27;, &#x27;端午&#x27;);
-      addHolidayRange(&#x27;2026-09-25&#x27;, &#x27;2026-09-27&#x27;, &#x27;中秋&#x27;);
-      addHolidayRange(&#x27;2026-10-01&#x27;, &#x27;2026-10-07&#x27;, &#x27;国庆&#x27;);
-      addHolidayRange(&#x27;2027-01-01&#x27;, &#x27;2027-01-03&#x27;, &#x27;元旦&#x27;);
-      addHolidayRange(&#x27;2027-02-05&#x27;, &#x27;2027-02-13&#x27;, &#x27;春节&#x27;);
-      addHolidayRange(&#x27;2027-04-03&#x27;, &#x27;2027-04-05&#x27;, &#x27;清明&#x27;);
-      addHolidayRange(&#x27;2027-05-01&#x27;, &#x27;2027-05-05&#x27;, &#x27;劳动节&#x27;);
-      addHolidayRange(&#x27;2027-06-09&#x27;, &#x27;2027-06-09&#x27;, &#x27;端午&#x27;);
-      addHolidayRange(&#x27;2027-09-15&#x27;, &#x27;2027-09-15&#x27;, &#x27;中秋&#x27;);
-      addHolidayRange(&#x27;2027-10-01&#x27;, &#x27;2027-10-07&#x27;, &#x27;国庆&#x27;);
-      [[&#x27;2026-01-04&#x27;,&#x27;调休班&#x27;],[&#x27;2026-02-14&#x27;,&#x27;调休班&#x27;],[&#x27;2026-02-28&#x27;,&#x27;调休班&#x27;],[&#x27;2026-05-09&#x27;,&#x27;调休班&#x27;],[&#x27;2026-09-20&#x27;,&#x27;调休班&#x27;],[&#x27;2026-10-10&#x27;,&#x27;调休班&#x27;],[&#x27;2027-01-31&#x27;,&#x27;调休班&#x27;],[&#x27;2027-02-14&#x27;,&#x27;调休班&#x27;],[&#x27;2027-05-08&#x27;,&#x27;调休班&#x27;],[&#x27;2027-09-26&#x27;,&#x27;调休班&#x27;],[&#x27;2027-10-09&#x27;,&#x27;调休班&#x27;]].forEach(([date, label]) =&gt; makeupDays.set(date, label));
-      try { saved = JSON.parse(localStorage.getItem(&#x27;sh-metro-fares-v1&#x27;) || &#x27;{}&#x27;); } catch (_) {}
+      addHolidayRange('2026-01-01', '2026-01-03', '元旦');
+      addHolidayRange('2026-02-15', '2026-02-23', '春节');
+      addHolidayRange('2026-04-04', '2026-04-06', '清明');
+      addHolidayRange('2026-05-01', '2026-05-05', '劳动节');
+      addHolidayRange('2026-06-19', '2026-06-21', '端午');
+      addHolidayRange('2026-09-25', '2026-09-27', '中秋');
+      addHolidayRange('2026-10-01', '2026-10-07', '国庆');
+      addHolidayRange('2027-01-01', '2027-01-03', '元旦');
+      addHolidayRange('2027-02-05', '2027-02-13', '春节');
+      addHolidayRange('2027-04-03', '2027-04-05', '清明');
+      addHolidayRange('2027-05-01', '2027-05-05', '劳动节');
+      addHolidayRange('2027-06-09', '2027-06-09', '端午');
+      addHolidayRange('2027-09-15', '2027-09-15', '中秋');
+      addHolidayRange('2027-10-01', '2027-10-07', '国庆');
+      [['2026-01-04','调休班'],['2026-02-14','调休班'],['2026-02-28','调休班'],['2026-05-09','调休班'],['2026-09-20','调休班'],['2026-10-10','调休班'],['2027-01-31','调休班'],['2027-02-14','调休班'],['2027-05-08','调休班'],['2027-09-26','调休班'],['2027-10-09','调休班']].forEach(([date, label]) => makeupDays.set(date, label));
+      try { saved = JSON.parse(localStorage.getItem('sh-metro-fares-v1') || '{}'); } catch (_) {}
       const initialState = window.openai?.widgetState;
-      if (initialState?.modelContent?.farePairs &amp;&amp; typeof initialState.modelContent.farePairs === &#x27;object&#x27;) saved = initialState.modelContent.farePairs;
+      if (initialState?.modelContent?.farePairs && typeof initialState.modelContent.farePairs === 'object') saved = initialState.modelContent.farePairs;
       if (initialState?.privateContent?.fields) {
-        Object.entries(initialState.privateContent.fields).forEach(([id, value]) =&gt; {
-          if (fields.includes(id) &amp;&amp; typeof value === &#x27;string&#x27;) $(id).value = value;
+        Object.entries(initialState.privateContent.fields).forEach(([id, value]) => {
+          if (fields.includes(id) && typeof value === 'string') $(id).value = value;
         });
       }
-      if (Array.isArray(initialState?.privateContent?.selectedDates)) selectedDates = new Set(initialState.privateContent.selectedDates.filter(value =&gt; /^202[67]-\d{2}-\d{2}$/.test(value)));
+      if (Array.isArray(initialState?.privateContent?.selectedDates)) selectedDates = new Set(initialState.privateContent.selectedDates.filter(value => /^202[67]-\d{2}-\d{2}$/.test(value)));
       function persist() {
         const farePairs = Object.fromEntries(Object.entries(saved).slice(-50));
-        const fieldValues = Object.fromEntries(fields.map(id =&gt; [id, $(id).value]));
-        window.openai?.setWidgetState?.({ modelContent: { farePairs }, privateContent: { fields: fieldValues, selectedDates: [...selectedDates].sort() } })?.catch(() =&gt; {});
+        const fieldValues = Object.fromEntries(fields.map(id => [id, $(id).value]));
+        window.openai?.setWidgetState?.({ modelContent: { farePairs }, privateContent: { fields: fieldValues, selectedDates: [...selectedDates].sort() } })?.catch(() => {});
       }
-      const yuan = cents =&gt; (cents / 100).toFixed(2) + &#x27; 元&#x27;;
-      const monthKey = date =&gt; dateKey(date).slice(0, 7);
+      const yuan = cents => (cents / 100).toFixed(2) + ' 元';
+      const monthKey = date => dateKey(date).slice(0, 7);
       const packages = [{ rides: 35, cost: 19000 }, { rides: 45, cost: 21000 }, { rides: 60, cost: 27000 }, { rides: 90, cost: 39000 }];
       function payAsYouGo(dates, fare, prior, startMonth, covered = 0) {
         const spent = new Map([[startMonth, Math.round(prior * 100)]]);
         let total = 0;
-        dates.slice(covered).forEach(date =&gt; {
+        dates.slice(covered).forEach(date => {
           const month = monthKey(date);
           const previous = spent.get(month) || 0;
-          const charge = previous &gt;= 9000 ? Math.round(fare * 90) : fare * 100;
+          const charge = previous >= 9000 ? Math.round(fare * 90) : fare * 100;
           total += charge;
           spent.set(month, previous + charge);
         });
@@ -2116,246 +2104,246 @@ html&gt;body{padding:0}&lt;/style&gt;
         return end;
       }
       function updateEndDate() {
-        const start = new Date($(&#x27;date&#x27;).value + &#x27;T12:00:00&#x27;);
-        $(&#x27;end-date&#x27;).value = Number.isNaN(start.getTime()) ? &#x27;&#x27; : dateKey(passEndDate(start));
+        const start = new Date($('date').value + 'T12:00:00');
+        $('end-date').value = Number.isNaN(start.getTime()) ? '' : dateKey(passEndDate(start));
       }
       function windowDates() {
-        const start = new Date($(&#x27;date&#x27;).value + &#x27;T12:00:00&#x27;);
+        const start = new Date($('date').value + 'T12:00:00');
         if (Number.isNaN(start.getTime())) return [];
-        return Array.from({ length: 30 }, (_, i) =&gt; { const day = new Date(start); day.setDate(day.getDate() + i); return day; });
+        return Array.from({ length: 30 }, (_, i) => { const day = new Date(start); day.setDate(day.getDate() + i); return day; });
       }
       function dayKind(date) {
         const key = dateKey(date);
-        if (holidayDays.has(key)) return { kind: &#x27;holiday&#x27;, label: holidayDays.get(key), working: false };
-        if (makeupDays.has(key)) return { kind: &#x27;makeup&#x27;, label: makeupDays.get(key), working: true };
-        if (date.getDay() === 0 || date.getDay() === 6) return { kind: &#x27;weekend&#x27;, label: &#x27;周末&#x27;, working: false };
-        return { kind: &#x27;workday&#x27;, label: &#x27;工作日&#x27;, working: true };
+        if (holidayDays.has(key)) return { kind: 'holiday', label: holidayDays.get(key), working: false };
+        if (makeupDays.has(key)) return { kind: 'makeup', label: makeupDays.get(key), working: true };
+        if (date.getDay() === 0 || date.getDay() === 6) return { kind: 'weekend', label: '周末', working: false };
+        return { kind: 'workday', label: '工作日', working: true };
       }
       function selectWorkdays() {
-        selectedDates = new Set(windowDates().filter(day =&gt; dayKind(day).working).map(dateKey));
+        selectedDates = new Set(windowDates().filter(day => dayKind(day).working).map(dateKey));
         renderCalendar();
         calculate();
         persist();
       }
       function renderCalendar() {
         const range = windowDates(), inPassWindow = new Set(range.map(dateKey));
-        const selectableStart = new Date(&#x27;2026-12-01T00:00:00&#x27;);
-        const selectableEnd = new Date(&#x27;2027-12-31T23:59:59&#x27;);
+        const selectableStart = new Date('2026-12-01T00:00:00');
+        const selectableEnd = new Date('2027-12-31T23:59:59');
         const year = calendarMonth.getFullYear(), month = calendarMonth.getMonth();
-        $(&#x27;calendar-month&#x27;).textContent = year + &#x27;年&#x27; + (month + 1) + &#x27;月&#x27;;
-        const grid = $(&#x27;calendar-grid&#x27;); grid.replaceChildren();
+        $('calendar-month').textContent = year + '年' + (month + 1) + '月';
+        const grid = $('calendar-grid'); grid.replaceChildren();
         const first = new Date(year, month, 1, 12), leading = (first.getDay() + 6) % 7;
-        for (let i = 0; i &lt; leading; i++) grid.append(document.createElement(&#x27;span&#x27;));
+        for (let i = 0; i < leading; i++) grid.append(document.createElement('span'));
         const days = new Date(year, month + 1, 0).getDate();
-        for (let n = 1; n &lt;= days; n++) {
+        for (let n = 1; n <= days; n++) {
           const day = new Date(year, month, n, 12), key = dateKey(day), status = dayKind(day);
-          const button = document.createElement(&#x27;button&#x27;);
-          button.type = &#x27;button&#x27;; button.className = &#x27;btn viz-tile calendar-day cursor-interaction&#x27;;
-          button.dataset.kind = status.kind; button.setAttribute(&#x27;role&#x27;, &#x27;gridcell&#x27;);
+          const button = document.createElement('button');
+          button.type = 'button'; button.className = 'btn viz-tile calendar-day cursor-interaction';
+          button.dataset.kind = status.kind; button.setAttribute('role', 'gridcell');
           const coveredByWindow = inPassWindow.has(key);
-          button.dataset.inWindow = coveredByWindow ? &#x27;true&#x27; : &#x27;false&#x27;;
-          button.setAttribute(&#x27;aria-label&#x27;, key + &#x27;，&#x27; + status.label + &#x27;，&#x27; + (coveredByWindow ? &#x27;在次卡有效期内&#x27; : &#x27;次卡期外按次计费&#x27;) + (selectedDates.has(key) ? &#x27;，已选乘车&#x27; : &#x27;，未选乘车&#x27;));
-          button.setAttribute(&#x27;aria-pressed&#x27;, selectedDates.has(key) ? &#x27;true&#x27; : &#x27;false&#x27;);
-          button.disabled = day &lt; selectableStart || day &gt; selectableEnd;
-          const number = document.createElement(&#x27;span&#x27;); number.className = &#x27;day-number tabular-nums&#x27;; number.textContent = String(n);
-          const label = document.createElement(&#x27;span&#x27;); label.className = &#x27;day-status text-small&#x27;; label.textContent = status.label;
+          button.dataset.inWindow = coveredByWindow ? 'true' : 'false';
+          button.setAttribute('aria-label', key + '，' + status.label + '，' + (coveredByWindow ? '在次卡有效期内' : '次卡期外按次计费') + (selectedDates.has(key) ? '，已选乘车' : '，未选乘车'));
+          button.setAttribute('aria-pressed', selectedDates.has(key) ? 'true' : 'false');
+          button.disabled = day < selectableStart || day > selectableEnd;
+          const number = document.createElement('span'); number.className = 'day-number tabular-nums'; number.textContent = String(n);
+          const label = document.createElement('span'); label.className = 'day-status text-small'; label.textContent = status.label;
           button.append(number, label);
-          button.addEventListener(&#x27;click&#x27;, () =&gt; {
+          button.addEventListener('click', () => {
             if (selectedDates.has(key)) selectedDates.delete(key); else selectedDates.add(key);
             renderCalendar(); calculate(); persist();
           });
           grid.append(button);
         }
-        const ridesPerDay = Number($(&#x27;rides-per-day&#x27;).value) || 0, extraRides = Number($(&#x27;extra-rides&#x27;).value) || 0;
+        const ridesPerDay = Number($('rides-per-day').value) || 0, extraRides = Number($('extra-rides').value) || 0;
         const totalRides = selectedDates.size * ridesPerDay + extraRides;
-        const coveredDays = [...selectedDates].filter(key =&gt; inPassWindow.has(key)).length;
+        const coveredDays = [...selectedDates].filter(key => inPassWindow.has(key)).length;
         const outsideDays = selectedDates.size - coveredDays;
-        $(&#x27;calendar-summary&#x27;).textContent = &#x27;已选 &#x27; + selectedDates.size + &#x27; 天 · &#x27; + totalRides + &#x27; 次&#x27; + (outsideDays ? &#x27; · 其中期外 &#x27; + outsideDays + &#x27; 天&#x27; : &#x27;&#x27;);
-        $(&#x27;total-rides&#x27;).textContent = totalRides + &#x27; 次&#x27;;
-        $(&#x27;total-formula&#x27;).textContent = selectedDates.size + &#x27; 天 × &#x27; + ridesPerDay + &#x27; + &#x27; + extraRides + &#x27; = &#x27; + totalRides + &#x27; 次&#x27;;
+        $('calendar-summary').textContent = '已选 ' + selectedDates.size + ' 天 · ' + totalRides + ' 次' + (outsideDays ? ' · 其中期外 ' + outsideDays + ' 天' : '');
+        $('total-rides').textContent = totalRides + ' 次';
+        $('total-formula').textContent = selectedDates.size + ' 天 × ' + ridesPerDay + ' + ' + extraRides + ' = ' + totalRides + ' 次';
         const minMonth = new Date(2026, 11, 1), maxMonth = new Date(2027, 11, 1);
-        $(&#x27;prev-month&#x27;).disabled = calendarMonth &lt;= minMonth;
-        $(&#x27;next-month&#x27;).disabled = calendarMonth &gt;= maxMonth;
+        $('prev-month').disabled = calendarMonth <= minMonth;
+        $('next-month').disabled = calendarMonth >= maxMonth;
       }
       function refreshFare() {
-        const key = fareKey($(&#x27;origin&#x27;).value.trim(), $(&#x27;destination&#x27;).value.trim());
+        const key = fareKey($('origin').value.trim(), $('destination').value.trim());
         const fare = saved[key] ?? builtInFares[key];
-        $(&#x27;fare&#x27;).value = fare ?? &#x27;&#x27;;
-        fareSourceMode = saved[key] != null ? &#x27;saved&#x27; : (builtInFares[key] != null ? &#x27;built-in&#x27; : &#x27;manual&#x27;);
-        $(&#x27;query-status&#x27;).textContent = fare == null ? &#x27;可手动填写，或点击联网查询自动回填。&#x27; : &#x27;&#x27;;
+        $('fare').value = fare ?? '';
+        fareSourceMode = saved[key] != null ? 'saved' : (builtInFares[key] != null ? 'built-in' : 'manual');
+        $('query-status').textContent = fare == null ? '可手动填写，或点击联网查询自动回填。' : '';
         calculate();
       }
       async function queryFare() {
-        const origin = $(&#x27;origin&#x27;).value.trim(), destination = $(&#x27;destination&#x27;).value.trim();
+        const origin = $('origin').value.trim(), destination = $('destination').value.trim();
         if (!stationSet.has(origin) || !stationSet.has(destination) || origin === destination) {
-          $(&#x27;query-status&#x27;).textContent = &#x27;请先选择两个不同的已收录站点。&#x27;;
+          $('query-status').textContent = '请先选择两个不同的已收录站点。';
           return;
         }
-        const button = $(&#x27;query-fare&#x27;);
-        button.disabled = true; $(&#x27;query-label&#x27;).textContent = &#x27;查询中…&#x27;;
-        $(&#x27;query-status&#x27;).textContent = &#x27;正在获取 2026 年 12 月起的新票价…&#x27;;
+        const button = $('query-fare');
+        button.disabled = true; $('query-label').textContent = '查询中…';
+        $('query-status').textContent = '正在获取 2026 年 12 月起的新票价…';
         try {
-          const base = &#x27;https://shoscarchen.github.io/ShanghaiMetroPiriceTagMap/data/&#x27;;
+          const base = 'https://shoscarchen.github.io/ShanghaiMetroPiriceTagMap/data/';
           async function fetchJson(url) {
-            const response = await fetch(url, { cache: &#x27;force-cache&#x27; });
-            if (!response.ok) throw new Error(&#x27;票价数据请求失败：&#x27; + response.status);
+            const response = await fetch(url, { cache: 'force-cache' });
+            if (!response.ok) throw new Error('票价数据请求失败：' + response.status);
             return response.json();
           }
-          const remoteStations = await fetchJson(base + &#x27;stations.json&#x27;);
-          const originCode = remoteStations.find(station =&gt; station.name === origin)?.code;
-          const destinationCodes = remoteStations.filter(station =&gt; station.name === destination).map(station =&gt; station.code);
-          if (!originCode || !destinationCodes.length) throw new Error(&#x27;未找到站点代码&#x27;);
-          const data = await fetchJson(base + &#x27;prices/&#x27; + originCode + &#x27;.json&#x27;);
-          const fare = destinationCodes.map(code =&gt; Number(data.new?.[code])).find(value =&gt; Number.isInteger(value) &amp;&amp; value &gt;= 3);
-          if (!Number.isInteger(fare) || fare &lt; 3) throw new Error(&#x27;未找到该站点组合&#x27;);
+          const remoteStations = await fetchJson(base + 'stations.json');
+          const originCode = remoteStations.find(station => station.name === origin)?.code;
+          const destinationCodes = remoteStations.filter(station => station.name === destination).map(station => station.code);
+          if (!originCode || !destinationCodes.length) throw new Error('未找到站点代码');
+          const data = await fetchJson(base + 'prices/' + originCode + '.json');
+          const fare = destinationCodes.map(code => Number(data.new?.[code])).find(value => Number.isInteger(value) && value >= 3);
+          if (!Number.isInteger(fare) || fare < 3) throw new Error('未找到该站点组合');
           const key = fareKey(origin, destination);
-          saved[key] = fare; $(&#x27;fare&#x27;).value = String(fare); fareSourceMode = &#x27;online&#x27;;
-          try { localStorage.setItem(&#x27;sh-metro-fares-v1&#x27;, JSON.stringify(saved)); } catch (_) {}
-          $(&#x27;query-status&#x27;).textContent = &#x27;已联网获取并保存：新票价 &#x27; + fare + &#x27; 元。&#x27;;
+          saved[key] = fare; $('fare').value = String(fare); fareSourceMode = 'online';
+          try { localStorage.setItem('sh-metro-fares-v1', JSON.stringify(saved)); } catch (_) {}
+          $('query-status').textContent = '已联网获取并保存：新票价 ' + fare + ' 元。';
           calculate(); persist();
         } catch (error) {
-          console.error(&#x27;票价查询失败&#x27;, error);
-          $(&#x27;query-status&#x27;).textContent = &#x27;联网查询失败，已保留当前票价；仍可手动输入。&#x27;;
+          console.error('票价查询失败', error);
+          $('query-status').textContent = '联网查询失败，已保留当前票价；仍可手动输入。';
         } finally {
-          button.disabled = false; $(&#x27;query-label&#x27;).textContent = &#x27;查询票价&#x27;;
+          button.disabled = false; $('query-label').textContent = '查询票价';
         }
       }
       function calculate() {
-        const origin = $(&#x27;origin&#x27;).value.trim(), destination = $(&#x27;destination&#x27;).value.trim();
-        const fare = Number($(&#x27;fare&#x27;).value), ridesPerDay = Number($(&#x27;rides-per-day&#x27;).value), extraRides = Number($(&#x27;extra-rides&#x27;).value), prior = Number($(&#x27;prior&#x27;).value);
-        const start = new Date($(&#x27;date&#x27;).value + &#x27;T12:00:00&#x27;);
+        const origin = $('origin').value.trim(), destination = $('destination').value.trim();
+        const fare = Number($('fare').value), ridesPerDay = Number($('rides-per-day').value), extraRides = Number($('extra-rides').value), prior = Number($('prior').value);
+        const start = new Date($('date').value + 'T12:00:00');
         const end = passEndDate(start);
         const selected = [...selectedDates].sort();
-        const baseCount = Number.isInteger(ridesPerDay) &amp;&amp; ridesPerDay &gt; 0 ? ridesPerDay : 0;
-        const safeExtra = Number.isInteger(extraRides) &amp;&amp; extraRides &gt;= 0 ? extraRides : 0;
-        const dates = selected.flatMap(key =&gt; Array.from({ length: baseCount }, () =&gt; new Date(key + &#x27;T12:00:00&#x27;)));
+        const baseCount = Number.isInteger(ridesPerDay) && ridesPerDay > 0 ? ridesPerDay : 0;
+        const safeExtra = Number.isInteger(extraRides) && extraRides >= 0 ? extraRides : 0;
+        const dates = selected.flatMap(key => Array.from({ length: baseCount }, () => new Date(key + 'T12:00:00')));
         const extraDateKeys = selected.length ? selected : [dateKey(start)];
-        for (let i = 0; i &lt; safeExtra; i++) dates.push(new Date(extraDateKeys[i % extraDateKeys.length] + &#x27;T12:00:00&#x27;));
-        dates.sort((a, b) =&gt; a - b);
+        for (let i = 0; i < safeExtra; i++) dates.push(new Date(extraDateKeys[i % extraDateKeys.length] + 'T12:00:00'));
+        dates.sort((a, b) => a - b);
         const rides = dates.length;
-        let error = &#x27;&#x27;;
-        if (!stationSet.has(origin) || !stationSet.has(destination) || origin === destination) error = &#x27;请选择两个不同的已收录站点。&#x27;;
-        else if (!Number.isInteger(fare) || fare &lt; 3 || fare &gt; 30) error = &#x27;请填写该行程的单程新票价（3–30 元）。&#x27;;
-        else if (!Number.isInteger(ridesPerDay) || ridesPerDay &lt; 1 || ridesPerDay &gt; 10) error = &#x27;每个乘车日次数须为 1–10 次。&#x27;;
-        else if (!Number.isInteger(extraRides) || extraRides &lt; 0 || extraRides &gt; 150) error = &#x27;额外乘车次数须为 0–150 次。&#x27;;
-        else if (!rides) error = &#x27;请在日历中至少选择一个乘车日。&#x27;;
-        else if (rides &gt; 150) error = &#x27;当前日历安排超过 150 次，请减少乘车日或每日次数。&#x27;;
-        else if (!Number.isFinite(prior) || prior &lt; 0) error = &#x27;当月此前车费不能为负数。&#x27;;
-        else if (Number.isNaN(start.getTime()) || start &lt; new Date(&#x27;2026-12-01T00:00:00&#x27;) || start &gt; new Date(&#x27;2027-12-02T23:59:59&#x27;)) error = &#x27;请选择 2026 年 12 月 1 日至 2027 年 12 月 2 日的计划激活日期。&#x27;;
-        $(&#x27;validation&#x27;).textContent = error;
-        $(&#x27;validation&#x27;).hidden = !error;
-        $(&#x27;output&#x27;).hidden = !!error;
+        let error = '';
+        if (!stationSet.has(origin) || !stationSet.has(destination) || origin === destination) error = '请选择两个不同的已收录站点。';
+        else if (!Number.isInteger(fare) || fare < 3 || fare > 30) error = '请填写该行程的单程新票价（3–30 元）。';
+        else if (!Number.isInteger(ridesPerDay) || ridesPerDay < 1 || ridesPerDay > 10) error = '每个乘车日次数须为 1–10 次。';
+        else if (!Number.isInteger(extraRides) || extraRides < 0 || extraRides > 150) error = '额外乘车次数须为 0–150 次。';
+        else if (!rides) error = '请在日历中至少选择一个乘车日。';
+        else if (rides > 150) error = '当前日历安排超过 150 次，请减少乘车日或每日次数。';
+        else if (!Number.isFinite(prior) || prior < 0) error = '当月此前车费不能为负数。';
+        else if (Number.isNaN(start.getTime()) || start < new Date('2026-12-01T00:00:00') || start > new Date('2027-12-02T23:59:59')) error = '请选择 2026 年 12 月 1 日至 2027 年 12 月 2 日的计划激活日期。';
+        $('validation').textContent = error;
+        $('validation').hidden = !error;
+        $('output').hidden = !!error;
         if (error) return;
         const key = fareKey(origin, destination);
         const cash = payAsYouGo(dates, fare, prior, monthKey(start));
-        const options = [{ name: &#x27;按次支付&#x27;, passCost: null, cost: cash, unused: null, covered: 0, extraRides: rides, extraCost: cash }];
-        packages.forEach(pack =&gt; {
-          const eligibleDates = dates.filter(date =&gt; date &gt;= start &amp;&amp; date &lt;= end);
-          const outsideDates = dates.filter(date =&gt; date &lt; start || date &gt; end);
+        const options = [{ name: '按次支付', passCost: null, cost: cash, unused: null, covered: 0, extraRides: rides, extraCost: cash }];
+        packages.forEach(pack => {
+          const eligibleDates = dates.filter(date => date >= start && date <= end);
+          const outsideDates = dates.filter(date => date < start || date > end);
           const covered = Math.min(eligibleDates.length, pack.rides);
-          const cashDates = outsideDates.concat(eligibleDates.slice(covered)).sort((a, b) =&gt; a - b);
+          const cashDates = outsideDates.concat(eligibleDates.slice(covered)).sort((a, b) => a - b);
           const extraCost = payAsYouGo(cashDates, fare, prior, monthKey(start));
-          options.push({ name: pack.rides + &#x27; 次卡&#x27;, passCost: pack.cost, cost: pack.cost + extraCost, unused: pack.rides - covered, covered, extraRides: rides - covered, extraCost });
+          options.push({ name: pack.rides + ' 次卡', passCost: pack.cost, cost: pack.cost + extraCost, unused: pack.rides - covered, covered, extraRides: rides - covered, extraCost });
         });
-        options.sort((a, b) =&gt; a.cost - b.cost || a.covered - b.covered);
+        options.sort((a, b) => a.cost - b.cost || a.covered - b.covered);
         const best = options[0];
-        $(&#x27;best-name&#x27;).textContent = best.name;
-        $(&#x27;best-cost&#x27;).textContent = yuan(best.cost);
-        $(&#x27;saving&#x27;).textContent = yuan(cash - best.cost);
-        $(&#x27;best-detail&#x27;).textContent = best.unused === null ? &#x27;按实际乘坐次数付费&#x27; : (best.extraRides ? &#x27;另按次支付 &#x27; + best.extraRides + &#x27; 次 · &#x27; + yuan(best.extraCost) : (best.unused ? &#x27;预计剩余 &#x27; + best.unused + &#x27; 次&#x27; : &#x27;预计用完套餐次数&#x27;));
-        const windowDayCount = selected.filter(key =&gt; {
-          const day = new Date(key + &#x27;T12:00:00&#x27;); return day &gt;= start &amp;&amp; day &lt;= end;
+        $('best-name').textContent = best.name;
+        $('best-cost').textContent = yuan(best.cost);
+        $('saving').textContent = yuan(cash - best.cost);
+        $('best-detail').textContent = best.unused === null ? '按实际乘坐次数付费' : (best.extraRides ? '另按次支付 ' + best.extraRides + ' 次 · ' + yuan(best.extraCost) : (best.unused ? '预计剩余 ' + best.unused + ' 次' : '预计用完套餐次数'));
+        const windowDayCount = selected.filter(key => {
+          const day = new Date(key + 'T12:00:00'); return day >= start && day <= end;
         }).length;
-        $(&#x27;window&#x27;).textContent = &#x27;次卡有效期 &#x27; + dateKey(start) + &#x27; 至 &#x27; + dateKey(end) + &#x27; · 共选 &#x27; + selected.length + &#x27; 天 / &#x27; + rides + &#x27; 次 · 有效期内 &#x27; + windowDayCount + &#x27; 天&#x27;;
-        const tbody = $(&#x27;rows&#x27;); tbody.replaceChildren();
-        options.forEach((option, index) =&gt; {
-          const row = document.createElement(&#x27;tr&#x27;);
-          [option.name, option.passCost === null ? &#x27;—&#x27; : yuan(option.passCost), yuan(option.extraCost), yuan(option.cost), yuan(Math.round(option.cost / rides)), option.unused === null ? &#x27;—&#x27; : String(option.unused)].forEach((value, i) =&gt; {
-            const cell = document.createElement(i === 0 ? &#x27;th&#x27; : &#x27;td&#x27;);
+        $('window').textContent = '次卡有效期 ' + dateKey(start) + ' 至 ' + dateKey(end) + ' · 共选 ' + selected.length + ' 天 / ' + rides + ' 次 · 有效期内 ' + windowDayCount + ' 天';
+        const tbody = $('rows'); tbody.replaceChildren();
+        options.forEach((option, index) => {
+          const row = document.createElement('tr');
+          [option.name, option.passCost === null ? '—' : yuan(option.passCost), yuan(option.extraCost), yuan(option.cost), yuan(Math.round(option.cost / rides)), option.unused === null ? '—' : String(option.unused)].forEach((value, i) => {
+            const cell = document.createElement(i === 0 ? 'th' : 'td');
             cell.textContent = value;
             if (i === 0) {
-              const detail = document.createElement(&#x27;span&#x27;);
-              detail.className = &#x27;plan-detail text-small&#x27;;
-              detail.textContent = option.unused === null ? &#x27;全部 &#x27; + option.extraRides + &#x27; 次按次支付&#x27; : &#x27;次卡抵扣 &#x27; + option.covered + &#x27; 次&#x27; + (option.extraRides ? &#x27;；另按次支付 &#x27; + option.extraRides + &#x27; 次，&#x27; + yuan(option.extraCost) : &#x27;&#x27;);
+              const detail = document.createElement('span');
+              detail.className = 'plan-detail text-small';
+              detail.textContent = option.unused === null ? '全部 ' + option.extraRides + ' 次按次支付' : '次卡抵扣 ' + option.covered + ' 次' + (option.extraRides ? '；另按次支付 ' + option.extraRides + ' 次，' + yuan(option.extraCost) : '');
               cell.append(detail);
             }
             if (i) {
-              cell.className = &#x27;tabular-nums&#x27;;
-              const label = document.createElement(&#x27;span&#x27;);
-              label.className = &#x27;mobile-label&#x27;;
-              label.textContent = [&#x27;方式&#x27;, &#x27;次卡费用&#x27;, &#x27;按次费用&#x27;, &#x27;总费用&#x27;, &#x27;平均每次&#x27;, &#x27;未用次数&#x27;][i];
+              cell.className = 'tabular-nums';
+              const label = document.createElement('span');
+              label.className = 'mobile-label';
+              label.textContent = ['方式', '次卡费用', '按次费用', '总费用', '平均每次', '未用次数'][i];
               cell.prepend(label);
             }
-            if (index === 0) cell.classList.add(&#x27;best&#x27;);
+            if (index === 0) cell.classList.add('best');
             row.append(cell);
           });
           tbody.append(row);
         });
-        const sourceText = fareSourceMode === &#x27;online&#x27; ? &#x27;当前票价由联网静态票价库自动获取并保存在本机。&#x27; : (builtInFares[key] === fare ? &#x27;该站点组合的 7 元新票价已预先核对并内置。&#x27; : &#x27;当前使用手动输入或本机已保存的票价。&#x27;);
-        $(&#x27;fare-source&#x27;).textContent = sourceText + &#x27; 日历采用国务院公布的 2026、2027 年节假日与调休安排。&#x27;;
+        const sourceText = fareSourceMode === 'online' ? '当前票价由联网静态票价库自动获取并保存在本机。' : (builtInFares[key] === fare ? '该站点组合的 7 元新票价已预先核对并内置。' : '当前使用手动输入或本机已保存的票价。');
+        $('fare-source').textContent = sourceText + ' 日历采用国务院公布的 2026、2027 年节假日与调休安排。';
       }
-      [&#x27;origin&#x27;, &#x27;destination&#x27;].forEach(id =&gt; $(id).addEventListener(&#x27;input&#x27;, () =&gt; { refreshFare(); persist(); }));
-      $(&#x27;fare&#x27;).addEventListener(&#x27;input&#x27;, () =&gt; {
-        const origin = $(&#x27;origin&#x27;).value.trim(), destination = $(&#x27;destination&#x27;).value.trim();
-        const fare = Number($(&#x27;fare&#x27;).value);
-        fareSourceMode = &#x27;manual&#x27;;
-        if (stationSet.has(origin) &amp;&amp; stationSet.has(destination) &amp;&amp; origin !== destination &amp;&amp; Number.isInteger(fare) &amp;&amp; fare &gt;= 3 &amp;&amp; fare &lt;= 30) {
+      ['origin', 'destination'].forEach(id => $(id).addEventListener('input', () => { refreshFare(); persist(); }));
+      $('fare').addEventListener('input', () => {
+        const origin = $('origin').value.trim(), destination = $('destination').value.trim();
+        const fare = Number($('fare').value);
+        fareSourceMode = 'manual';
+        if (stationSet.has(origin) && stationSet.has(destination) && origin !== destination && Number.isInteger(fare) && fare >= 3 && fare <= 30) {
           saved[fareKey(origin, destination)] = fare;
-          try { localStorage.setItem(&#x27;sh-metro-fares-v1&#x27;, JSON.stringify(saved)); } catch (_) {}
+          try { localStorage.setItem('sh-metro-fares-v1', JSON.stringify(saved)); } catch (_) {}
         }
         calculate();
         persist();
       });
-      $(&#x27;query-fare&#x27;).addEventListener(&#x27;click&#x27;, queryFare);
-      $(&#x27;rides-per-day&#x27;).addEventListener(&#x27;input&#x27;, () =&gt; { renderCalendar(); calculate(); persist(); });
-      $(&#x27;extra-rides&#x27;).addEventListener(&#x27;input&#x27;, () =&gt; { renderCalendar(); calculate(); persist(); });
-      $(&#x27;prior&#x27;).addEventListener(&#x27;input&#x27;, () =&gt; { calculate(); persist(); });
-      $(&#x27;date&#x27;).addEventListener(&#x27;change&#x27;, () =&gt; {
-        const start = new Date($(&#x27;date&#x27;).value + &#x27;T12:00:00&#x27;);
+      $('query-fare').addEventListener('click', queryFare);
+      $('rides-per-day').addEventListener('input', () => { renderCalendar(); calculate(); persist(); });
+      $('extra-rides').addEventListener('input', () => { renderCalendar(); calculate(); persist(); });
+      $('prior').addEventListener('input', () => { calculate(); persist(); });
+      $('date').addEventListener('change', () => {
+        const start = new Date($('date').value + 'T12:00:00');
         updateEndDate();
         if (!Number.isNaN(start.getTime())) calendarMonth = new Date(start.getFullYear(), start.getMonth(), 1);
         selectWorkdays();
       });
-      $(&#x27;select-workdays&#x27;).addEventListener(&#x27;click&#x27;, selectWorkdays);
-      $(&#x27;clear-days&#x27;).addEventListener(&#x27;click&#x27;, () =&gt; { selectedDates.clear(); renderCalendar(); calculate(); persist(); });
-      $(&#x27;prev-month&#x27;).addEventListener(&#x27;click&#x27;, () =&gt; { calendarMonth = new Date(calendarMonth.getFullYear(), calendarMonth.getMonth() - 1, 1); renderCalendar(); });
-      $(&#x27;next-month&#x27;).addEventListener(&#x27;click&#x27;, () =&gt; { calendarMonth = new Date(calendarMonth.getFullYear(), calendarMonth.getMonth() + 1, 1); renderCalendar(); });
+      $('select-workdays').addEventListener('click', selectWorkdays);
+      $('clear-days').addEventListener('click', () => { selectedDates.clear(); renderCalendar(); calculate(); persist(); });
+      $('prev-month').addEventListener('click', () => { calendarMonth = new Date(calendarMonth.getFullYear(), calendarMonth.getMonth() - 1, 1); renderCalendar(); });
+      $('next-month').addEventListener('click', () => { calendarMonth = new Date(calendarMonth.getFullYear(), calendarMonth.getMonth() + 1, 1); renderCalendar(); });
       updateEndDate();
-      const initialStart = new Date($(&#x27;date&#x27;).value + &#x27;T12:00:00&#x27;);
+      const initialStart = new Date($('date').value + 'T12:00:00');
       if (!Number.isNaN(initialStart.getTime())) calendarMonth = new Date(initialStart.getFullYear(), initialStart.getMonth(), 1);
       const initialWindow = new Set(windowDates().map(dateKey));
-      if (!selectedDates.size || ![...selectedDates].some(key =&gt; initialWindow.has(key))) selectedDates = new Set(windowDates().filter(day =&gt; dayKind(day).working).map(dateKey));
+      if (!selectedDates.size || ![...selectedDates].some(key => initialWindow.has(key))) selectedDates = new Set(windowDates().filter(day => dayKind(day).working).map(dateKey));
       renderCalendar();
       calculate();
     })();
-  &lt;/script&gt;
-&lt;/div&gt;
+  </script>
+</div>
 
-&lt;script&gt;
-(() =&gt; {
+<script>
+(() => {
   let positioningReady = window.FloatingUIDOM
     ? Promise.resolve(window.FloatingUIDOM)
     : null;
-  const loadScript = (src) =&gt; new Promise((resolve, reject) =&gt; {
-    const script = document.createElement(&quot;script&quot;);
+  const loadScript = (src) => new Promise((resolve, reject) => {
+    const script = document.createElement("script");
     script.src = src;
     script.onload = resolve;
-    script.onerror = () =&gt; {
+    script.onerror = () => {
       script.remove();
-      reject(new Error(&quot;Could not load tooltip positioning&quot;));
+      reject(new Error("Could not load tooltip positioning"));
     };
     document.head.appendChild(script);
   });
-  const loadPositioning = async () =&gt; {
-    const domUrl = &quot;https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js&quot;;
-    const preload = document.createElement(&quot;link&quot;);
-    preload.rel = &quot;preload&quot;;
-    preload.as = &quot;script&quot;;
+  const loadPositioning = async () => {
+    const domUrl = "https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js";
+    const preload = document.createElement("link");
+    preload.rel = "preload";
+    preload.as = "script";
     preload.href = domUrl;
     document.head.appendChild(preload);
     try {
       if (window.FloatingUICore == null) {
-        await loadScript(&quot;https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js&quot;);
+        await loadScript("https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js");
       }
       await loadScript(domUrl);
       return window.FloatingUIDOM;
@@ -2363,11 +2351,11 @@ html&gt;body{padding:0}&lt;/style&gt;
       preload.remove();
     }
   };
-  const getPositioning = () =&gt; positioningReady ??= loadPositioning().catch((error) =&gt; {
+  const getPositioning = () => positioningReady ??= loadPositioning().catch((error) => {
     positioningReady = null;
     throw error;
   });
-  const tooltipPlacements = new Set([&quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;left&quot;]);
+  const tooltipPlacements = new Set(["top", "right", "bottom", "left"]);
   const tooltipId = `codex-visualization-tooltip-${
     window.crypto?.randomUUID?.() ?? Date.now().toString(36)
   }`;
@@ -2384,35 +2372,35 @@ html&gt;body{padding:0}&lt;/style&gt;
   let lastPointerWasTouch = false;
   let pinnedByTouch = false;
 
-  const getTrigger = (event) =&gt; {
+  const getTrigger = (event) => {
     for (const target of event.composedPath()) {
       if (target?.nodeType === Node.ELEMENT_NODE) {
-        const trigger = target.closest(&quot;[data-tooltip]&quot;);
+        const trigger = target.closest("[data-tooltip]");
         if (trigger) return trigger;
       }
     }
     return null;
   };
-  const containsTarget = (trigger, target) =&gt;
-    target?.nodeType != null &amp;&amp; trigger.contains(target);
-  const getContent = (trigger) =&gt;
-    trigger.getAttribute(&quot;data-tooltip&quot;)?.trim() ?? &quot;&quot;;
-  const getPlacement = (trigger) =&gt; {
-    const placement = trigger.getAttribute(&quot;data-tooltip-placement&quot;);
-    return tooltipPlacements.has(placement) ? placement : &quot;top&quot;;
+  const containsTarget = (trigger, target) =>
+    target?.nodeType != null && trigger.contains(target);
+  const getContent = (trigger) =>
+    trigger.getAttribute("data-tooltip")?.trim() ?? "";
+  const getPlacement = (trigger) => {
+    const placement = trigger.getAttribute("data-tooltip-placement");
+    return tooltipPlacements.has(placement) ? placement : "top";
   };
-  const getTooltip = () =&gt; {
+  const getTooltip = () => {
     if (tooltip == null) {
-      tooltip = document.createElement(&quot;div&quot;);
+      tooltip = document.createElement("div");
       tooltip.id = tooltipId;
-      tooltip.className = &quot;tooltip&quot;;
-      tooltip.setAttribute(&quot;role&quot;, &quot;tooltip&quot;);
+      tooltip.className = "tooltip";
+      tooltip.setAttribute("role", "tooltip");
     }
     return tooltip;
   };
-  const setDescribedBy = (trigger, described) =&gt; {
+  const setDescribedBy = (trigger, described) => {
     const ids = new Set(
-      (trigger.getAttribute(&quot;aria-describedby&quot;) ?? &quot;&quot;)
+      (trigger.getAttribute("aria-describedby") ?? "")
         .split(/\s+/)
         .filter(Boolean),
     );
@@ -2422,19 +2410,19 @@ html&gt;body{padding:0}&lt;/style&gt;
       ids.delete(tooltipId);
     }
     if (ids.size === 0) {
-      trigger.removeAttribute(&quot;aria-describedby&quot;);
+      trigger.removeAttribute("aria-describedby");
     } else {
-      trigger.setAttribute(&quot;aria-describedby&quot;, [...ids].join(&quot; &quot;));
+      trigger.setAttribute("aria-describedby", [...ids].join(" "));
     }
   };
-  const clearOpenTimeout = () =&gt; {
+  const clearOpenTimeout = () => {
     if (openTimeout != null) {
       window.clearTimeout(openTimeout);
       openTimeout = null;
     }
     pendingTrigger = null;
   };
-  const closeTooltip = (activateSkipDelay = true) =&gt; {
+  const closeTooltip = (activateSkipDelay = true) => {
     clearOpenTimeout();
     pinnedByTouch = false;
     positionRequest += 1;
@@ -2450,7 +2438,7 @@ html&gt;body{padding:0}&lt;/style&gt;
       skipDelayUntil = Date.now() + skipDelay;
     }
   };
-  const updatePosition = (trigger, floating, { computePosition, flip, offset, shift, size }) =&gt; {
+  const updatePosition = (trigger, floating, { computePosition, flip, offset, shift, size }) => {
     const request = ++positionRequest;
     void computePosition(trigger, floating, {
       middleware: [
@@ -2461,34 +2449,34 @@ html&gt;body{padding:0}&lt;/style&gt;
           padding: tooltipGap,
           apply({ availableHeight, availableWidth, elements }) {
             elements.floating.style.setProperty(
-              &quot;--tooltip-available-width&quot;,
+              "--tooltip-available-width",
               `${Math.max(0, availableWidth)}px`,
             );
             elements.floating.style.setProperty(
-              &quot;--tooltip-available-height&quot;,
+              "--tooltip-available-height",
               `${Math.max(0, availableHeight)}px`,
             );
           },
         }),
       ],
       placement: getPlacement(trigger),
-      strategy: &quot;fixed&quot;,
+      strategy: "fixed",
     })
-      .then(({ x, y }) =&gt; {
+      .then(({ x, y }) => {
         if (activeTrigger !== trigger || request !== positionRequest) {
           return;
         }
         const scale = window.devicePixelRatio || 1;
         floating.style.transform = `translate(${Math.round(x * scale) / scale}px, ${Math.round(y * scale) / scale}px)`;
-        floating.style.visibility = &quot;visible&quot;;
+        floating.style.visibility = "visible";
       })
-      .catch(() =&gt; {
-        if (activeTrigger === trigger &amp;&amp; request === positionRequest) {
+      .catch(() => {
+        if (activeTrigger === trigger && request === positionRequest) {
           closeTooltip(false);
         }
       });
   };
-  const openTooltip = (trigger) =&gt; {
+  const openTooltip = (trigger) => {
     const content = getContent(trigger);
     if (!trigger.isConnected || content.length === 0) {
       return;
@@ -2500,22 +2488,22 @@ html&gt;body{padding:0}&lt;/style&gt;
     closeTooltip();
     const floating = getTooltip();
     floating.textContent = content;
-    floating.style.visibility = &quot;hidden&quot;;
-    floating.style.transform = &quot;translate(0, 0)&quot;;
+    floating.style.visibility = "hidden";
+    floating.style.transform = "translate(0, 0)";
     document.body.appendChild(floating);
     activeTrigger = trigger;
     setDescribedBy(trigger, true);
     const request = positionRequest;
-    void getPositioning().then((positioning) =&gt; {
+    void getPositioning().then((positioning) => {
       if (request !== positionRequest || !trigger.isConnected) return;
-      autoUpdateCleanup = positioning.autoUpdate(trigger, floating, () =&gt; {
+      autoUpdateCleanup = positioning.autoUpdate(trigger, floating, () => {
         updatePosition(trigger, floating, positioning);
       });
-    }).catch(() =&gt; {
+    }).catch(() => {
       if (request === positionRequest) closeTooltip(false);
     });
   };
-  const requestOpen = (trigger, immediate = false) =&gt; {
+  const requestOpen = (trigger, immediate = false) => {
     if (
       getContent(trigger).length === 0 ||
       activeTrigger === trigger ||
@@ -2526,21 +2514,21 @@ html&gt;body{padding:0}&lt;/style&gt;
     clearOpenTimeout();
     pendingTrigger = trigger;
     const delay =
-      immediate || activeTrigger != null || Date.now() &lt; skipDelayUntil
+      immediate || activeTrigger != null || Date.now() < skipDelayUntil
         ? 0
         : hoverDelay;
     if (delay === 0) {
       openTooltip(trigger);
       return;
     }
-    openTimeout = window.setTimeout(() =&gt; {
+    openTimeout = window.setTimeout(() => {
       openTimeout = null;
       pendingTrigger = null;
       openTooltip(trigger);
     }, delay);
   };
-  const handlePointerOpen = (event) =&gt; {
-    if (event.pointerType === &quot;touch&quot;) {
+  const handlePointerOpen = (event) => {
+    if (event.pointerType === "touch") {
       return;
     }
     const trigger = getTrigger(event);
@@ -2549,12 +2537,12 @@ html&gt;body{padding:0}&lt;/style&gt;
     }
     requestOpen(trigger);
   };
-  const handlePointer = (event) =&gt; {
+  const handlePointer = (event) => {
     lastPointerWasTouch =
-      event.type === &quot;pointerdown&quot; &amp;&amp; event.pointerType === &quot;touch&quot;;
+      event.type === "pointerdown" && event.pointerType === "touch";
   };
-  const handleTouchClick = (event) =&gt; {
-    const isTouch = event.pointerType === &quot;touch&quot; || lastPointerWasTouch;
+  const handleTouchClick = (event) => {
+    const isTouch = event.pointerType === "touch" || lastPointerWasTouch;
     lastPointerWasTouch = false;
     if (!isTouch || event.detail === 0) {
       return;
@@ -2564,7 +2552,7 @@ html&gt;body{padding:0}&lt;/style&gt;
       trigger == null ||
       !trigger.isConnected ||
       getContent(trigger).length === 0 ||
-      (pinnedByTouch &amp;&amp; activeTrigger === trigger)
+      (pinnedByTouch && activeTrigger === trigger)
     ) {
       if (pinnedByTouch) {
         closeTooltip();
@@ -2573,13 +2561,13 @@ html&gt;body{padding:0}&lt;/style&gt;
     }
     openTooltip(trigger);
     pinnedByTouch = activeTrigger === trigger;
-    window.setTimeout(() =&gt; {
-      if (activeTrigger === trigger &amp;&amp; !trigger.isConnected) {
+    window.setTimeout(() => {
+      if (activeTrigger === trigger && !trigger.isConnected) {
         closeTooltip(false);
       }
     }, 0);
   };
-  const handleLeave = (event) =&gt; {
+  const handleLeave = (event) => {
     if (pinnedByTouch) {
       return;
     }
@@ -2591,18 +2579,18 @@ html&gt;body{padding:0}&lt;/style&gt;
       closeTooltip();
     }
   };
-  const handleFocusIn = (event) =&gt; {
+  const handleFocusIn = (event) => {
     const trigger = getTrigger(event);
-    if (trigger?.matches(&quot;:focus-visible&quot;)) {
+    if (trigger?.matches(":focus-visible")) {
       requestOpen(trigger, true);
     }
   };
-  const handleKeyDown = (event) =&gt; {
-    if (event.key === &quot;Escape&quot;) {
+  const handleKeyDown = (event) => {
+    if (event.key === "Escape") {
       closeTooltip();
     }
   };
-  const handleContextMenu = (event) =&gt; {
+  const handleContextMenu = (event) => {
     lastPointerWasTouch = false;
     const trigger = getTrigger(event);
     if (activeTrigger === trigger || pendingTrigger === trigger) {
@@ -2622,42 +2610,42 @@ html&gt;body{padding:0}&lt;/style&gt;
   };
   const roots = new Map();
   const handledEvents = new WeakSet();
-  const handleEvent = (event) =&gt; {
+  const handleEvent = (event) => {
     if (handledEvents.has(event)) return;
     handledEvents.add(event);
     handlers[event.type](event);
   };
-  const discoverRoots = (node) =&gt; {
+  const discoverRoots = (node) => {
     if (node.shadowRoot) listen(node.shadowRoot);
-    for (const element of node.querySelectorAll(&quot;*&quot;)) {
+    for (const element of node.querySelectorAll("*")) {
       if (element.shadowRoot) listen(element.shadowRoot);
     }
   };
-  const listen = (root) =&gt; {
+  const listen = (root) => {
     if (roots.has(root)) return;
     for (const type of Object.keys(handlers)) root.addEventListener(type, handleEvent);
-    const observer = new window.MutationObserver((records) =&gt; {
+    const observer = new window.MutationObserver((records) => {
       for (const { addedNodes } of records) {
         for (const node of addedNodes) {
           if (node.nodeType === Node.ELEMENT_NODE) discoverRoots(node);
         }
       }
       for (const [root, cleanup] of roots) {
-        if (root.host &amp;&amp; !root.host.isConnected) {
+        if (root.host && !root.host.isConnected) {
           cleanup();
           roots.delete(root);
         }
       }
-      if (activeTrigger &amp;&amp; !activeTrigger.isConnected) closeTooltip(false);
+      if (activeTrigger && !activeTrigger.isConnected) closeTooltip(false);
     });
     observer.observe(root, { childList: true, subtree: true });
-    roots.set(root, () =&gt; {
+    roots.set(root, () => {
       observer.disconnect();
       for (const type of Object.keys(handlers)) root.removeEventListener(type, handleEvent);
     });
     discoverRoots(root);
   };
-  const destroy = () =&gt; {
+  const destroy = () => {
     closeTooltip(false);
     lastPointerWasTouch = false;
     for (const cleanup of roots.values()) cleanup();
@@ -2667,50 +2655,50 @@ html&gt;body{padding:0}&lt;/style&gt;
 
   // Events between children of one shadow root never reach the document.
   listen(document);
-  window.addEventListener(&quot;pagehide&quot;, destroy, { once: true });
+  window.addEventListener("pagehide", destroy, { once: true });
 })();
-&lt;/script&gt;
-&lt;script id=&quot;codex-visualization-tabs&quot;&gt;
-(() =&gt; {
-  const selector = &#x27;.nav[role=&quot;tablist&quot;] [role=&quot;tab&quot;]&#x27;;
-  const disabled = &#x27;:disabled,[aria-disabled=&quot;true&quot;]&#x27;;
-  const selectTab = (selected) =&gt; {
-    const panelId = selected.getAttribute(&quot;aria-controls&quot;);
-    for (const tab of selected.closest(&#x27;[role=&quot;tablist&quot;]&#x27;).querySelectorAll(&#x27;[role=&quot;tab&quot;]&#x27;)) {
+</script>
+<script id="codex-visualization-tabs">
+(() => {
+  const selector = '.nav[role="tablist"] [role="tab"]';
+  const disabled = ':disabled,[aria-disabled="true"]';
+  const selectTab = (selected) => {
+    const panelId = selected.getAttribute("aria-controls");
+    for (const tab of selected.closest('[role="tablist"]').querySelectorAll('[role="tab"]')) {
       const active = tab === selected;
-      tab.classList.toggle(&quot;active&quot;, active);
-      tab.setAttribute(&quot;aria-selected&quot;, String(active));
-      const id = tab.getAttribute(&quot;aria-controls&quot;);
-      const panel = id &amp;&amp; document.getElementById(id);
+      tab.classList.toggle("active", active);
+      tab.setAttribute("aria-selected", String(active));
+      const id = tab.getAttribute("aria-controls");
+      const panel = id && document.getElementById(id);
       if (panel != null) {
         panel.hidden = id !== panelId;
-        if (!panel.hidden &amp;&amp; selected.id) {
-          panel.setAttribute(&quot;aria-labelledby&quot;, selected.id);
+        if (!panel.hidden && selected.id) {
+          panel.setAttribute("aria-labelledby", selected.id);
         }
       }
     }
   };
-  const interact = (event) =&gt; {
+  const interact = (event) => {
     const tab = event.target?.closest?.(selector);
     if (event.defaultPrevented || tab == null || tab.matches(disabled)) {
       return;
     }
-    if (event.type === &quot;click&quot;) {
+    if (event.type === "click") {
       selectTab(tab);
       return;
     }
     const tabs = Array.from(
-      tab.closest(&#x27;[role=&quot;tablist&quot;]&#x27;).querySelectorAll(&#x27;[role=&quot;tab&quot;]&#x27;),
-    ).filter((candidate) =&gt; !candidate.matches(disabled));
+      tab.closest('[role="tablist"]').querySelectorAll('[role="tab"]'),
+    ).filter((candidate) => !candidate.matches(disabled));
     const current = tabs.indexOf(tab);
     let next;
-    if (event.key === &quot;ArrowRight&quot; || event.key === &quot;ArrowDown&quot;) {
+    if (event.key === "ArrowRight" || event.key === "ArrowDown") {
       next = (current + 1) % tabs.length;
-    } else if (event.key === &quot;ArrowLeft&quot; || event.key === &quot;ArrowUp&quot;) {
+    } else if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
       next = (current + tabs.length - 1) % tabs.length;
-    } else if (event.key === &quot;Home&quot;) {
+    } else if (event.key === "Home") {
       next = 0;
-    } else if (event.key === &quot;End&quot;) {
+    } else if (event.key === "End") {
       next = tabs.length - 1;
     } else {
       return;
@@ -2720,38 +2708,38 @@ html&gt;body{padding:0}&lt;/style&gt;
     selectTab(tabs[next]);
   };
 
-  for (const list of document.querySelectorAll(&#x27;.nav[role=&quot;tablist&quot;]&#x27;)) {
+  for (const list of document.querySelectorAll('.nav[role="tablist"]')) {
     const selected =
-      list.querySelector(&#x27;[role=&quot;tab&quot;][aria-selected=&quot;true&quot;]&#x27;) ??
-      list.querySelector(&#x27;[role=&quot;tab&quot;].active&#x27;) ??
-      list.querySelector(&#x27;[role=&quot;tab&quot;]&#x27;);
+      list.querySelector('[role="tab"][aria-selected="true"]') ??
+      list.querySelector('[role="tab"].active') ??
+      list.querySelector('[role="tab"]');
     if (selected != null) {
       selectTab(selected);
     }
   }
-  document.addEventListener(&quot;click&quot;, interact);
-  document.addEventListener(&quot;keydown&quot;, interact);
-  window.addEventListener(&quot;pagehide&quot;, () =&gt; {
-    document.removeEventListener(&quot;click&quot;, interact);
-    document.removeEventListener(&quot;keydown&quot;, interact);
+  document.addEventListener("click", interact);
+  document.addEventListener("keydown", interact);
+  window.addEventListener("pagehide", () => {
+    document.removeEventListener("click", interact);
+    document.removeEventListener("keydown", interact);
   }, { once: true });
 })();
-&lt;/script&gt;
-&lt;script id=&quot;codex-visualization-carousel&quot;&gt;
-  (() =&gt; {
-    for (const root of document.querySelectorAll(&quot;.viz-carousel&quot;)) {
+</script>
+<script id="codex-visualization-carousel">
+  (() => {
+    for (const root of document.querySelectorAll(".viz-carousel")) {
       const panels = Array.from(
-        root.querySelectorAll(&quot;:scope &gt; [data-variant]&quot;),
+        root.querySelectorAll(":scope > [data-variant]"),
       );
       if (panels.length === 0) {
         continue;
       }
-      root.setAttribute(&quot;role&quot;, &quot;group&quot;);
-      panels.forEach((panel, index) =&gt; {
+      root.setAttribute("role", "group");
+      panels.forEach((panel, index) => {
         panel.hidden = index !== 0;
-        panel.setAttribute(&quot;role&quot;, &quot;group&quot;);
-        if (!panel.hasAttribute(&quot;aria-label&quot;)) {
-          panel.setAttribute(&quot;aria-label&quot;, panel.dataset.variant);
+        panel.setAttribute("role", "group");
+        if (!panel.hasAttribute("aria-label")) {
+          panel.setAttribute("aria-label", panel.dataset.variant);
         }
       });
       root.dataset.activeVariant = panels[0].dataset.variant;
@@ -2759,47 +2747,47 @@ html&gt;body{padding:0}&lt;/style&gt;
         continue;
       }
 
-      const controls = document.createElement(&quot;div&quot;);
-      controls.className = &quot;viz-carousel-controls&quot;;
-      // Portable copy of the settings dropdown&#x27;s legacy glyph; no 14px icon-package preset matches it.
+      const controls = document.createElement("div");
+      controls.className = "viz-carousel-controls";
+      // Portable copy of the settings dropdown's legacy glyph; no 14px icon-package preset matches it.
       // https://github.com/openai/openai/blob/master/codex/codex-apps/webview/src/icons/chevron.svg
       controls.innerHTML = `
-      &lt;button type=&quot;button&quot; class=&quot;viz-carousel-previous cursor-interaction&quot;&gt;&lt;i data-lucide=&quot;chevron-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-      &lt;details class=&quot;viz-carousel-picker&quot;&gt;
-        &lt;summary class=&quot;cursor-interaction&quot;&gt;
-          &lt;span class=&quot;viz-carousel-count tabular-nums&quot;&gt;&lt;/span&gt;
-          &lt;span class=&quot;viz-carousel-name&quot;&gt;&lt;/span&gt;
-          &lt;svg class=&quot;viz-carousel-caret&quot; width=&quot;14&quot; height=&quot;14&quot; viewBox=&quot;0 0 20 21&quot; fill=&quot;none&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;
-            &lt;path d=&quot;M15.2793 7.71101C15.539 7.45131 15.961 7.45131 16.2207 7.71101C16.4804 7.97071 16.4804 8.39272 16.2207 8.65242L10.4707 14.4024C10.211 14.6621 9.78902 14.6621 9.52932 14.4024L3.77932 8.65242L3.69436 8.54792C3.52385 8.28979 3.55205 7.93828 3.77932 7.71101C4.00659 7.48374 4.3581 7.45554 4.61623 7.62605L4.72073 7.71101L10 12.9903L15.2793 7.71101Z&quot; fill=&quot;currentColor&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;0.6&quot; /&gt;
-          &lt;/svg&gt;
-        &lt;/summary&gt;
-        &lt;div class=&quot;viz-carousel-options&quot;&gt;&lt;/div&gt;
-      &lt;/details&gt;
-      &lt;button type=&quot;button&quot; class=&quot;viz-carousel-next cursor-interaction&quot;&gt;&lt;i data-lucide=&quot;chevron-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/button&gt;`;
-      const previous = controls.querySelector(&quot;.viz-carousel-previous&quot;);
-      const next = controls.querySelector(&quot;.viz-carousel-next&quot;);
-      const picker = controls.querySelector(&quot;.viz-carousel-picker&quot;);
-      const summary = picker.querySelector(&quot;summary&quot;);
-      const count = controls.querySelector(&quot;.viz-carousel-count&quot;);
-      const name = controls.querySelector(&quot;.viz-carousel-name&quot;);
-      const options = controls.querySelector(&quot;.viz-carousel-options&quot;);
-      const status = document.createElement(&quot;span&quot;);
-      status.className = &quot;sr-only&quot;;
-      status.setAttribute(&quot;role&quot;, &quot;status&quot;);
-      status.setAttribute(&quot;aria-live&quot;, &quot;polite&quot;);
-      status.setAttribute(&quot;aria-atomic&quot;, &quot;true&quot;);
+      <button type="button" class="viz-carousel-previous cursor-interaction"><i data-lucide="chevron-left" aria-hidden="true"></i></button>
+      <details class="viz-carousel-picker">
+        <summary class="cursor-interaction">
+          <span class="viz-carousel-count tabular-nums"></span>
+          <span class="viz-carousel-name"></span>
+          <svg class="viz-carousel-caret" width="14" height="14" viewBox="0 0 20 21" fill="none" aria-hidden="true" focusable="false">
+            <path d="M15.2793 7.71101C15.539 7.45131 15.961 7.45131 16.2207 7.71101C16.4804 7.97071 16.4804 8.39272 16.2207 8.65242L10.4707 14.4024C10.211 14.6621 9.78902 14.6621 9.52932 14.4024L3.77932 8.65242L3.69436 8.54792C3.52385 8.28979 3.55205 7.93828 3.77932 7.71101C4.00659 7.48374 4.3581 7.45554 4.61623 7.62605L4.72073 7.71101L10 12.9903L15.2793 7.71101Z" fill="currentColor" stroke="currentColor" stroke-width="0.6" />
+          </svg>
+        </summary>
+        <div class="viz-carousel-options"></div>
+      </details>
+      <button type="button" class="viz-carousel-next cursor-interaction"><i data-lucide="chevron-right" aria-hidden="true"></i></button>`;
+      const previous = controls.querySelector(".viz-carousel-previous");
+      const next = controls.querySelector(".viz-carousel-next");
+      const picker = controls.querySelector(".viz-carousel-picker");
+      const summary = picker.querySelector("summary");
+      const count = controls.querySelector(".viz-carousel-count");
+      const name = controls.querySelector(".viz-carousel-name");
+      const options = controls.querySelector(".viz-carousel-options");
+      const status = document.createElement("span");
+      status.className = "sr-only";
+      status.setAttribute("role", "status");
+      status.setAttribute("aria-live", "polite");
+      status.setAttribute("aria-atomic", "true");
       previous.setAttribute(
-        &quot;aria-label&quot;,
-        root.dataset.previousLabel ?? &quot;Previous variant&quot;,
+        "aria-label",
+        root.dataset.previousLabel ?? "Previous variant",
       );
-      next.setAttribute(&quot;aria-label&quot;, root.dataset.nextLabel ?? &quot;Next variant&quot;);
+      next.setAttribute("aria-label", root.dataset.nextLabel ?? "Next variant");
 
       let active = 0;
       let mousePointerId = null;
       let summaryPointerHandled = false;
-      summary.addEventListener(&quot;pointerdown&quot;, (event) =&gt; {
+      summary.addEventListener("pointerdown", (event) => {
         summaryPointerHandled =
-          event.pointerType === &quot;mouse&quot; &amp;&amp; event.button === 0 &amp;&amp; !event.ctrlKey;
+          event.pointerType === "mouse" && event.button === 0 && !event.ctrlKey;
         if (!summaryPointerHandled) {
           return;
         }
@@ -2808,25 +2796,25 @@ html&gt;body{padding:0}&lt;/style&gt;
         picker.open = !picker.open;
         mousePointerId = picker.open ? event.pointerId : null;
       });
-      summary.addEventListener(&quot;click&quot;, (event) =&gt; {
-        if (summaryPointerHandled &amp;&amp; event.detail &gt; 0) {
+      summary.addEventListener("click", (event) => {
+        if (summaryPointerHandled && event.detail > 0) {
           event.preventDefault();
         }
       });
-      const choices = panels.map((panel, index) =&gt; {
-        const choice = document.createElement(&quot;button&quot;);
-        choice.type = &quot;button&quot;;
-        choice.className = &quot;cursor-interaction&quot;;
+      const choices = panels.map((panel, index) => {
+        const choice = document.createElement("button");
+        choice.type = "button";
+        choice.className = "cursor-interaction";
         choice.textContent = panel.dataset.variant;
-        choice.addEventListener(&quot;click&quot;, () =&gt; {
+        choice.addEventListener("click", () => {
           select(index);
           summary.focus();
         });
-        choice.addEventListener(&quot;pointerup&quot;, (event) =&gt; {
+        choice.addEventListener("pointerup", (event) => {
           if (
-            picker.open &amp;&amp;
-            event.pointerType === &quot;mouse&quot; &amp;&amp;
-            event.button === 0 &amp;&amp;
+            picker.open &&
+            event.pointerType === "mouse" &&
+            event.button === 0 &&
             event.pointerId === mousePointerId
           ) {
             choice.click();
@@ -2835,13 +2823,13 @@ html&gt;body{padding:0}&lt;/style&gt;
         options.appendChild(choice);
         return choice;
       });
-      const select = (index) =&gt; {
+      const select = (index) => {
         const changed = active !== index;
         active = index;
-        panels.forEach((panel, position) =&gt; {
+        panels.forEach((panel, position) => {
           panel.hidden = position !== active;
           choices[position].setAttribute(
-            &quot;aria-current&quot;,
+            "aria-current",
             String(position === active),
           );
         });
@@ -2854,14 +2842,14 @@ html&gt;body{padding:0}&lt;/style&gt;
           status.textContent = `${count.textContent}: ${name.textContent}`;
         }
       };
-      previous.addEventListener(&quot;click&quot;, () =&gt;
+      previous.addEventListener("click", () =>
         select((active + panels.length - 1) % panels.length),
       );
-      next.addEventListener(&quot;click&quot;, () =&gt;
+      next.addEventListener("click", () =>
         select((active + 1) % panels.length),
       );
-      picker.addEventListener(&quot;keydown&quot;, (event) =&gt; {
-        if (event.key === &quot;Escape&quot; &amp;&amp; picker.open) {
+      picker.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && picker.open) {
           event.preventDefault();
           picker.open = false;
           mousePointerId = null;
@@ -2873,13 +2861,13 @@ html&gt;body{padding:0}&lt;/style&gt;
         }
         const index = choices.indexOf(document.activeElement);
         let nextIndex;
-        if (event.key === &quot;ArrowDown&quot;) {
-          nextIndex = index &lt; 0 ? active : (index + 1) % choices.length;
-        } else if (event.key === &quot;ArrowUp&quot;) {
-          nextIndex = index &lt; 0 ? active : (index + choices.length - 1) % choices.length;
-        } else if (picker.open &amp;&amp; event.key === &quot;Home&quot;) {
+        if (event.key === "ArrowDown") {
+          nextIndex = index < 0 ? active : (index + 1) % choices.length;
+        } else if (event.key === "ArrowUp") {
+          nextIndex = index < 0 ? active : (index + choices.length - 1) % choices.length;
+        } else if (picker.open && event.key === "Home") {
           nextIndex = 0;
-        } else if (picker.open &amp;&amp; event.key === &quot;End&quot;) {
+        } else if (picker.open && event.key === "End") {
           nextIndex = choices.length - 1;
         } else {
           return;
@@ -2888,13 +2876,13 @@ html&gt;body{padding:0}&lt;/style&gt;
         picker.open = true;
         choices[nextIndex].focus();
       });
-      picker.addEventListener(&quot;focusout&quot;, (event) =&gt; {
+      picker.addEventListener("focusout", (event) => {
         if (!picker.contains(event.relatedTarget)) {
           picker.open = false;
           mousePointerId = null;
         }
       });
-      const dismiss = (event) =&gt; {
+      const dismiss = (event) => {
         if (!summary.contains(event.target)) {
           mousePointerId = null;
         }
@@ -2902,29 +2890,29 @@ html&gt;body{padding:0}&lt;/style&gt;
           picker.open = false;
         }
       };
-      const endPointerSelection = () =&gt; {
+      const endPointerSelection = () => {
         mousePointerId = null;
       };
-      const sizePicker = () =&gt; {
+      const sizePicker = () => {
         root.style.setProperty(
-          &quot;--viz-carousel-picker-height&quot;,
+          "--viz-carousel-picker-height",
           `${picker.open ? options.offsetHeight : 0}px`,
         );
       };
-      picker.addEventListener(&quot;toggle&quot;, sizePicker);
-      window.addEventListener(&quot;resize&quot;, sizePicker);
-      document.addEventListener(&quot;pointerdown&quot;, dismiss);
-      document.addEventListener(&quot;pointerup&quot;, endPointerSelection);
-      document.addEventListener(&quot;pointercancel&quot;, endPointerSelection);
-      window.addEventListener(&quot;blur&quot;, endPointerSelection);
+      picker.addEventListener("toggle", sizePicker);
+      window.addEventListener("resize", sizePicker);
+      document.addEventListener("pointerdown", dismiss);
+      document.addEventListener("pointerup", endPointerSelection);
+      document.addEventListener("pointercancel", endPointerSelection);
+      window.addEventListener("blur", endPointerSelection);
       window.addEventListener(
-        &quot;pagehide&quot;,
-        () =&gt; {
-          document.removeEventListener(&quot;pointerdown&quot;, dismiss);
-          document.removeEventListener(&quot;pointerup&quot;, endPointerSelection);
-          document.removeEventListener(&quot;pointercancel&quot;, endPointerSelection);
-          window.removeEventListener(&quot;blur&quot;, endPointerSelection);
-          window.removeEventListener(&quot;resize&quot;, sizePicker);
+        "pagehide",
+        () => {
+          document.removeEventListener("pointerdown", dismiss);
+          document.removeEventListener("pointerup", endPointerSelection);
+          document.removeEventListener("pointercancel", endPointerSelection);
+          window.removeEventListener("blur", endPointerSelection);
+          window.removeEventListener("resize", sizePicker);
         },
         { once: true },
       );
@@ -2932,11 +2920,11 @@ html&gt;body{padding:0}&lt;/style&gt;
       select(0);
     }
   })();
-&lt;/script&gt;
-&lt;script id=&quot;codex-visualization-lucide&quot; async src=&quot;https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;
-(() =&gt; {
-  const initialize = () =&gt; {
+</script>
+<script id="codex-visualization-lucide" async src="https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js"></script>
+<script>
+(() => {
+  const initialize = () => {
     globalThis.lucide?.createIcons({ attrs: { width: 16, height: 16 } });
   };
   if (globalThis.lucide != null) {
@@ -2944,292 +2932,10 @@ html&gt;body{padding:0}&lt;/style&gt;
     return;
   }
   document
-    .getElementById(&quot;codex-visualization-lucide&quot;)
-    ?.addEventListener(&quot;load&quot;, initialize, { once: true });
-})();
-&lt;/script&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-"></iframe>
-
-<script>(() => {
-  const frame = document.getElementById("codex-visualization");
-  if (!(frame instanceof HTMLIFrameElement)) {
-    return;
-  }
-  const isShare = document.documentElement.classList.contains(
-    "visualization-share-root",
-  );
-  let viewportHeight = globalThis.innerHeight;
-  let sizeFingerprint = null;
-  let sizeWriteTimeout;
-  let lastSize = null;
-  let pendingSize = null;
-  const storageKey = `codex:visualization-widget-state-v2:${JSON.stringify([
-    globalThis.location.pathname,
-    globalThis.location.search,
-  ])}`;
-  const sizeStorageKey = `${storageKey}:share-size-v1`;
-  const parseState = (serializedState) => {
-    if (
-      typeof serializedState !== "string" ||
-      new TextEncoder().encode(serializedState).length > 16 * 1024
-    ) {
-      throw new TypeError(
-        "Widget state must be a JSON object of at most 16 KiB",
-      );
-    }
-    /** @type {unknown} */
-    const state = JSON.parse(serializedState);
-    if (
-      state == null ||
-      typeof state !== "object" ||
-      Array.isArray(state) ||
-      ("imageIds" in state &&
-        (!Array.isArray(state.imageIds) || state.imageIds.length > 0))
-    ) {
-      throw new TypeError("Widget state must be a JSON object");
-    }
-    const storedState = { modelContent: null, privateContent: null, ...state };
-    const canonicalState = JSON.stringify(
-      storedState,
-      (_key, /** @type {unknown} */ value) => {
-        if (typeof value === "number" && !Number.isFinite(value)) {
-          throw new TypeError("Widget state must contain finite numbers");
-        }
-        return value;
-      },
-    );
-    if (new TextEncoder().encode(canonicalState).length > 16 * 1024) {
-      throw new TypeError(
-        "Widget state must be a JSON object of at most 16 KiB",
-      );
-    }
-    return storedState;
-  };
-  let storage = null;
-  let state = null;
-  try {
-    const localStorage = globalThis.localStorage;
-    const probeKey = `${storageKey}:probe`;
-    localStorage.setItem(probeKey, "1");
-    localStorage.removeItem(probeKey);
-    storage = localStorage;
-    const savedState = storage.getItem(storageKey);
-    if (savedState != null) {
-      try {
-        state = parseState(savedState);
-      } catch {
-        // Invalid saved state does not disable future writes.
-      }
-    }
-  } catch {
-    storage = null;
-  }
-  const persistSize = () => {
-    globalThis.clearTimeout(sizeWriteTimeout);
-    if (pendingSize == null) {
-      return;
-    }
-    try {
-      storage?.setItem(sizeStorageKey, pendingSize);
-    } catch {
-      // A denied or full cache must not affect the visualization.
-    }
-    pendingSize = null;
-  };
-  if (isShare) {
-    globalThis.addEventListener("pagehide", persistSize);
-  }
-  const initialGlobals = {
-    widgetState: state,
-    statePersistence: storage == null ? "none" : "local",
-  };
-
-  const channel = new MessageChannel();
-  channel.port1.addEventListener("message", (event) => {
-    const data = event.data;
-    if (typeof data !== "object" || data == null) {
-      return;
-    }
-    if (data.type === "widget-state-write") {
-      if (!Number.isSafeInteger(data.id) || data.id <= 0) {
-        return;
-      }
-      let ok = false;
-      try {
-        if (storage != null) {
-          const state = parseState(data.state);
-          storage.setItem(storageKey, JSON.stringify(state));
-          ok = true;
-        }
-      } catch {
-        // Storage denial, quota limits, and invalid state return a failed receipt.
-      }
-      channel.port1.postMessage({
-        type: "widget-state-result",
-        id: data.id,
-        ok,
-      });
-      return;
-    }
-    if (data.type === "height") {
-      const height = data.height;
-      if (
-        typeof height !== "number" ||
-        !Number.isFinite(height) ||
-        height < 0
-      ) {
-        return;
-      }
-      if (height <= 10_000) {
-        const width = isShare && storage != null ? frame.clientWidth : null;
-        frame.style.height = Math.ceil(height) + "px";
-        if (isShare && storage != null) {
-          const size = JSON.stringify({
-            fingerprint: sizeFingerprint,
-            width,
-            viewportHeight: globalThis.innerHeight,
-            dark: globalThis.matchMedia("(prefers-color-scheme: dark)").matches,
-            scale: globalThis.devicePixelRatio,
-            height: Math.ceil(height),
-          });
-          if (size !== lastSize) {
-            lastSize = size;
-            pendingSize = size;
-            globalThis.clearTimeout(sizeWriteTimeout);
-            sizeWriteTimeout = globalThis.setTimeout(persistSize, 100);
-          }
-        }
-      }
-      if (isShare) {
-        // Keep unusually tall content accessible without accepting an unbounded height.
-        if (height > 10_000 && Number.parseFloat(frame.style.height) === 0) {
-          frame.style.removeProperty("height");
-        }
-        frame.scrolling = height > 10_000 ? "auto" : "no";
-        document.documentElement.classList.add("visualization-share-ready");
-      }
-      return;
-    }
-    if (data.type === "scroll-to") {
-      const top = data.top;
-      if (
-        typeof top === "number" &&
-        Number.isFinite(top) &&
-        top >= 0 &&
-        globalThis.navigator.userActivation?.isActive === true
-      ) {
-        globalThis.scrollTo({
-          top: Math.ceil(
-            globalThis.scrollY + frame.getBoundingClientRect().top + top,
-          ),
-        });
-      }
-      return;
-    }
-    if (data.type === "open-external") {
-      const rawHref = data.href;
-      if (typeof rawHref !== "string") {
-        return;
-      }
-      let href;
-      try {
-        const url = new URL(rawHref, document.baseURI);
-        if (url.protocol !== "https:") {
-          return;
-        }
-        href = url.href;
-      } catch {
-        return;
-      }
-      if (globalThis.navigator.userActivation?.isActive === true) {
-        const anchor = document.createElement("a");
-        anchor.href = href;
-        anchor.rel = "noopener noreferrer";
-        anchor.target = "_blank";
-        document.body.appendChild(anchor);
-        anchor.click();
-        anchor.remove();
-      }
-      return;
-    }
-    if (data.type === "follow-up") {
-      const prompt = data.prompt;
-      if (
-        typeof prompt !== "string" ||
-        globalThis.navigator.userActivation?.isActive !== true
-      ) {
-        return;
-      }
-      const title = data.title;
-      globalThis.prompt(typeof title === "string" ? title : prompt, prompt);
-    }
-  });
-  channel.port1.start();
-  const srcdoc = frame.dataset.srcdoc;
-  if (srcdoc == null) {
-    return;
-  }
-  globalThis.addEventListener("resize", () => {
-    const height = Number.parseFloat(frame.style.height);
-    if (!isShare && (!Number.isFinite(height) || height <= viewportHeight)) {
-      frame.style.removeProperty("height");
-    }
-    viewportHeight = globalThis.innerHeight;
-    channel.port1.postMessage({ type: "measure" });
-  });
-  frame.addEventListener(
-    "load",
-    () => {
-      frame.contentWindow?.postMessage(
-        { type: "codex-visualization-initialize" },
-        "*",
-        [channel.port2],
-      );
-    },
-    { once: true },
-  );
-  // Match the trusted bootstrap element, not the same text in an authored title.
-  const frameHtml = srcdoc.replace(
-    '<script type="application/json" id="codex-visualization-widget-state">__CODEX_VISUALIZATION_WIDGET_STATE__<\/script>',
-    () =>
-      '<script type="application/json" id="codex-visualization-widget-state">' +
-      JSON.stringify(initialGlobals).replaceAll("<", "\\u003c") +
-      "<\/script>",
-  );
-  if (isShare && storage != null) {
-    // Fingerprint the rendered document, including restored widget state, without
-    // storing its content. This is a layout cache, not a security identity.
-    let hash = 5381;
-    for (let index = 0; index < frameHtml.length; index += 1) {
-      hash = (hash * 33 + frameHtml.charCodeAt(index)) % 4_294_967_296;
-    }
-    sizeFingerprint = hash.toString(36);
-    try {
-      const size = JSON.parse(storage.getItem(sizeStorageKey) ?? "null");
-      if (
-        size?.fingerprint === sizeFingerprint &&
-        size.width === frame.clientWidth &&
-        size.viewportHeight === globalThis.innerHeight &&
-        size.dark ===
-          globalThis.matchMedia("(prefers-color-scheme: dark)").matches &&
-        size.scale === globalThis.devicePixelRatio &&
-        typeof size.height === "number" &&
-        Number.isFinite(size.height) &&
-        size.height >= 0 &&
-        size.height <= 10_000
-      ) {
-        frame.style.height = size.height + "px";
-      }
-    } catch {
-      // Ignore missing or invalid cache entries and measure the live frame.
-    }
-  }
-  frame.srcdoc = frameHtml;
-  delete frame.dataset.srcdoc;
+    .getElementById("codex-visualization-lucide")
+    ?.addEventListener("load", initialize, { once: true });
 })();
 </script>
+
 </body>
 </html>
