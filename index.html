@@ -1889,9 +1889,16 @@ html>body{padding:0}</style>
     #sh-metro-planner .plan-grid { display: grid; grid-template-columns: minmax(0, 3fr) minmax(210px, 1fr); gap: calc(var(--font-size-base) * .9); align-items: stretch; }
     #sh-metro-planner .plan-inputs { display: grid; gap: calc(var(--font-size-base) * .7); }
     #sh-metro-planner .ride-settings { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: calc(var(--font-size-base) * .7); }
+    #sh-metro-planner .ride-settings > .field { align-content: start; }
     #sh-metro-planner .field { display: grid; gap: calc(var(--font-size-base) * .3); min-width: 0; }
     #sh-metro-planner .field :is(input, select) { width: 100%; box-sizing: border-box; background: var(--card); }
     #sh-metro-planner .field > .form-label, #sh-metro-planner .fare-field > .form-label { color: var(--foreground); font-weight: 500; }
+    #sh-metro-planner .station-search { position: relative; min-width: 0; }
+    #sh-metro-planner .station-options { position: absolute; z-index: 30; top: calc(100% + 4px); right: 0; left: 0; max-height: 260px; overflow-y: auto; padding: 4px; border: 1px solid var(--input); border-radius: var(--radius); color: var(--popover-foreground); background: var(--popover); box-shadow: 0 10px 28px rgb(0 0 0 / 18%); }
+    #sh-metro-planner .station-options[hidden] { display: none; }
+    #sh-metro-planner .station-option { display: block; width: 100%; min-height: 40px; padding: 8px 10px; border: 0; border-radius: var(--radius-sm); color: var(--popover-foreground); background: var(--popover); font: inherit; text-align: left; }
+    #sh-metro-planner .station-option:is(:hover, :focus-visible), #sh-metro-planner .station-option[aria-selected="true"] { color: var(--accent-foreground); background: var(--accent); }
+    #sh-metro-planner .station-empty { padding: 10px; color: var(--muted-foreground); }
     #sh-metro-planner .validity-range { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: calc(var(--font-size-base) * .5); }
     #sh-metro-planner .fare-entry { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: calc(var(--font-size-base) * .5); align-items: center; }
     #sh-metro-planner .fare-status:empty { display: none; }
@@ -1933,19 +1940,24 @@ html>body{padding:0}</style>
       #sh-metro-planner .plan-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 540px) {
-      #sh-metro-planner { width: calc(100% - 24px) !important; padding-top: calc(var(--font-size-base) * .8) !important; gap: calc(var(--font-size-base) * 1.05); }
-      #sh-metro-planner .route-grid, #sh-metro-planner .plan-grid, #sh-metro-planner .summary, #sh-metro-planner .ride-settings { grid-template-columns: 1fr; }
+      #sh-metro-planner { width: calc(100% - 24px) !important; padding-top: calc(var(--font-size-base) * .7) !important; gap: calc(var(--font-size-base) * .9); }
+      #sh-metro-planner .route-grid, #sh-metro-planner .plan-grid, #sh-metro-planner .summary { grid-template-columns: 1fr; }
       #sh-metro-planner .route-grid .fare-field { grid-column: auto; }
-      #sh-metro-planner .validity-range { grid-template-columns: 1fr; }
+      #sh-metro-planner .route-grid, #sh-metro-planner .plan-inputs { gap: calc(var(--font-size-base) * .55); }
+      #sh-metro-planner .validity-range { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: calc(var(--font-size-base) * .35); }
+      #sh-metro-planner .ride-settings { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: calc(var(--font-size-base) * .45); }
+      #sh-metro-planner .ride-settings > .field:last-child { grid-column: 1 / -1; width: min(100%, 180px); }
+      #sh-metro-planner .fare-entry { grid-template-columns: minmax(72px, 96px) minmax(0, 1fr); }
       #sh-metro-planner .intro { padding-right: 0; }
       #sh-metro-planner .section-head { align-items: flex-start; }
-      #sh-metro-planner .form-section, #sh-metro-planner .calendar-section, #sh-metro-planner .result { padding-left: calc(var(--font-size-base) * .6); }
-      #sh-metro-planner .table-responsive { overflow: visible; }
-      #sh-metro-planner .plan-table, #sh-metro-planner .plan-table tbody, #sh-metro-planner .plan-table tr { display: block; width: 100%; }
-      #sh-metro-planner .plan-table thead { display: none; }
-      #sh-metro-planner .plan-table tr { padding: calc(var(--font-size-base) * .5) 0; border-bottom: 1px solid var(--border); }
-      #sh-metro-planner .plan-table th, #sh-metro-planner .plan-table td { display: block; width: 100%; box-sizing: border-box; padding: calc(var(--font-size-base) * .2) 0; }
-      #sh-metro-planner .mobile-label { display: inline-block; min-width: 6em; color: var(--muted-foreground); }
+      #sh-metro-planner .form-section, #sh-metro-planner .calendar-section, #sh-metro-planner .result { padding-left: calc(var(--font-size-base) * .5); }
+      #sh-metro-planner .form-section { gap: calc(var(--font-size-base) * .6); }
+      #sh-metro-planner .field { gap: calc(var(--font-size-base) * .2); }
+      #sh-metro-planner .total-summary { min-height: 0; }
+      #sh-metro-planner .table-responsive { overflow-x: auto; overscroll-behavior-inline: contain; }
+      #sh-metro-planner .plan-table { min-width: 760px; table-layout: fixed; }
+      #sh-metro-planner .plan-table :is(th, td):first-child { position: sticky; left: 0; z-index: 1; background: var(--background); box-shadow: 8px 0 12px -12px var(--foreground); }
+      #sh-metro-planner .plan-table thead th:first-child { z-index: 2; }
       #sh-metro-planner .calendar-grid { grid-auto-rows: calc(var(--font-size-base) * 3.8); }
       #sh-metro-planner .calendar-day { padding-left: 0; padding-right: 0; }
     }
@@ -1958,8 +1970,8 @@ html>body{padding:0}</style>
   <section class="form-section" aria-labelledby="sh-route-title">
     <div class="section-head"><h2 id="sh-route-title">路线与票价</h2><span class="text-small text-muted">票价可手动填写，也可自动查询</span></div>
     <div class="route-grid">
-      <label class="field"><span class="form-label">出发站</span><select id="sh-origin" class="form-select" aria-label="出发站"></select></label>
-      <label class="field"><span class="form-label">到达站</span><select id="sh-destination" class="form-select" aria-label="到达站"></select></label>
+      <div class="field"><label class="form-label" for="sh-origin">出发站</label><div class="station-search"><input id="sh-origin" class="form-control" type="search" value="下沙" placeholder="输入站名搜索" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="sh-origin-options"><div id="sh-origin-options" class="station-options" role="listbox" hidden></div></div></div>
+      <div class="field"><label class="form-label" for="sh-destination">到达站</label><div class="station-search"><input id="sh-destination" class="form-control" type="search" value="张江高科" placeholder="输入站名搜索" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="sh-destination-options"><div id="sh-destination-options" class="station-options" role="listbox" hidden></div></div></div>
       <div class="field fare-field"><label class="form-label" for="sh-fare">单程新票价（元）</label><div class="fare-entry"><input id="sh-fare" class="form-control" type="number" min="3" max="30" step="1" value="7" aria-label="手动输入单程新票价"><button id="sh-query-fare" class="btn btn-primary" type="button"><i data-lucide="cloud-download" aria-hidden="true"></i><span id="sh-query-label">查询票价</span></button></div><span id="sh-query-status" class="fare-status text-small text-muted" aria-live="polite"></span></div>
     </div>
   </section>
@@ -2047,16 +2059,67 @@ html>body{padding:0}</style>
         codesByName.get(name).push(stationCode(lineIndex, stationIndex));
       }));
       const $ = id => root.querySelector('#sh-' + id);
-      [['origin', '下沙'], ['destination', '张江高科']].forEach(([id, defaultValue]) => {
-        const select = $(id);
-        stations.forEach(name => {
-          const option = document.createElement('option');
-          option.value = name;
-          option.textContent = name;
-          option.selected = name === defaultValue;
-          select.append(option);
+      function setupStationSearch(id) {
+        const input = $(id), options = $(id + '-options');
+        let visibleNames = [], activeIndex = -1;
+        const close = () => {
+          options.hidden = true;
+          input.setAttribute('aria-expanded', 'false');
+          input.removeAttribute('aria-activedescendant');
+          activeIndex = -1;
+        };
+        const choose = name => {
+          input.value = name;
+          input.dispatchEvent(new Event('input', { bubbles: true }));
+          close();
+        };
+        const render = query => {
+          const keyword = query.trim();
+          visibleNames = stations.filter(name => !keyword || name.includes(keyword)).slice(0, 40);
+          options.replaceChildren();
+          if (!visibleNames.length) {
+            const empty = document.createElement('div');
+            empty.className = 'station-empty text-small';
+            empty.textContent = '未找到匹配站点';
+            options.append(empty);
+          } else {
+            visibleNames.forEach((name, index) => {
+              const option = document.createElement('button');
+              option.type = 'button';
+              option.id = 'sh-' + id + '-option-' + index;
+              option.className = 'station-option cursor-interaction';
+              option.setAttribute('role', 'option');
+              option.setAttribute('aria-selected', 'false');
+              option.textContent = name;
+              option.addEventListener('pointerdown', event => event.preventDefault());
+              option.addEventListener('click', () => choose(name));
+              options.append(option);
+            });
+          }
+          options.hidden = false;
+          input.setAttribute('aria-expanded', 'true');
+          activeIndex = -1;
+        };
+        const setActive = index => {
+          if (!visibleNames.length) return;
+          activeIndex = (index + visibleNames.length) % visibleNames.length;
+          options.querySelectorAll('[role="option"]').forEach((option, optionIndex) => option.setAttribute('aria-selected', optionIndex === activeIndex ? 'true' : 'false'));
+          const active = options.querySelectorAll('[role="option"]')[activeIndex];
+          input.setAttribute('aria-activedescendant', active.id);
+          active.scrollIntoView({ block: 'nearest' });
+        };
+        input.addEventListener('focus', () => { input.select(); render(''); });
+        input.addEventListener('input', () => render(input.value));
+        input.addEventListener('keydown', event => {
+          if (event.key === 'ArrowDown') { event.preventDefault(); if (options.hidden) render(input.value); setActive(activeIndex + 1); }
+          else if (event.key === 'ArrowUp') { event.preventDefault(); if (options.hidden) render(input.value); setActive(activeIndex - 1); }
+          else if (event.key === 'Enter' && !options.hidden) { event.preventDefault(); const exact = visibleNames.find(name => name === input.value); if (exact || activeIndex >= 0 || visibleNames.length === 1) choose(exact || visibleNames[Math.max(activeIndex, 0)]); }
+          else if (event.key === 'Escape') close();
         });
-      });
+        input.addEventListener('blur', () => setTimeout(close, 120));
+      }
+      setupStationSearch('origin');
+      setupStationSearch('destination');
       const fields = ['origin', 'destination', 'fare', 'rides-per-day', 'extra-rides', 'date', 'prior'];
       const builtInFares = { '下沙|张江高科': 7 };
       const fareKey = (a, b) => [a, b].sort((x, y) => x.localeCompare(y, 'zh-CN')).join('|');
