@@ -2108,7 +2108,7 @@ html>body{padding:0}</style>
           input.setAttribute('aria-activedescendant', active.id);
           active.scrollIntoView({ block: 'nearest' });
         };
-        input.addEventListener('focus', () => { input.select(); render(''); });
+        input.addEventListener('focus', () => render(''));
         input.addEventListener('input', () => render(input.value));
         input.addEventListener('keydown', event => {
           if (event.key === 'ArrowDown') { event.preventDefault(); if (options.hidden) render(input.value); setActive(activeIndex + 1); }
