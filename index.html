@@ -3270,12 +3270,13 @@ html>body{padding:0}</style>
           return;
         }
         const button = $('query-fare');
+        const startedAt = performance.now();
         button.disabled = true; $('query-label').textContent = '查询中…';
         $('query-status').textContent = '正在联网获取 2026 年 12 月起的新票价…';
         try {
           const base = 'https://shoscarchen.github.io/ShanghaiMetroPiriceTagMap/data/';
           async function fetchJson(url) {
-            const response = await fetch(url, { cache: 'force-cache' });
+            const response = await fetch(url + '?request=' + Date.now(), { cache: 'no-store' });
             if (!response.ok) throw new Error('票价数据请求失败：' + response.status);
             return response.json();
           }
@@ -3289,7 +3290,9 @@ html>body{padding:0}</style>
           const key = fareKey(origin, destination);
           saved[key] = fare; $('fare').value = String(fare); fareSourceMode = 'online';
           try { localStorage.setItem('sh-metro-fares-v1', JSON.stringify(saved)); } catch (_) {}
-          $('query-status').textContent = '已联网获取并保存：新票价 ' + fare + ' 元。';
+          const elapsed = ((performance.now() - startedAt) / 1000).toFixed(2);
+          const queriedAt = new Date().toLocaleTimeString('zh-CN', { hour12: false });
+          $('query-status').textContent = queriedAt + ' 已真实联网获取：新票价 ' + fare + ' 元，用时 ' + elapsed + ' 秒。';
           calculate(); persist();
         } catch (error) {
           console.error('票价查询失败', error);
