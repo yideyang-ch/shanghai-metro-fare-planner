@@ -1879,22 +1879,25 @@ html>body{padding:0}</style>
 </script>
 <div id="sh-metro-planner">
   <style>
-    #sh-metro-planner { display: grid; gap: calc(var(--font-size-base) * 1.1); color: var(--foreground); }
+    #sh-metro-planner { display: grid; width: calc(100% - 32px) !important; max-width: 1180px !important; margin: 0 auto !important; padding: calc(var(--font-size-base) * 1.25) 0 calc(var(--font-size-base) * 2) !important; gap: calc(var(--font-size-base) * 1.25); color: var(--foreground); }
     #sh-metro-planner .intro { display: grid; gap: calc(var(--font-size-base) * .35); padding-right: 90px; }
-    #sh-metro-planner .form-section { display: grid; gap: calc(var(--font-size-base) * .7); }
+    #sh-metro-planner .form-section { display: grid; gap: calc(var(--font-size-base) * .8); padding-left: calc(var(--font-size-base) * .8); border-left: 3px solid var(--blue); }
+    #sh-metro-planner .form-section:nth-of-type(2) { border-left-color: var(--green); }
     #sh-metro-planner .section-head { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: calc(var(--font-size-base) * .4); }
+    #sh-metro-planner .section-head h2, #sh-metro-planner .calendar-head h2, #sh-metro-planner .result-head h2, #sh-metro-planner .notes h2 { color: var(--foreground); }
     #sh-metro-planner .route-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(260px, 1.15fr); gap: calc(var(--font-size-base) * .75); align-items: start; }
     #sh-metro-planner .plan-grid { display: grid; grid-template-columns: minmax(0, 3fr) minmax(210px, 1fr); gap: calc(var(--font-size-base) * .9); align-items: stretch; }
     #sh-metro-planner .plan-inputs { display: grid; gap: calc(var(--font-size-base) * .7); }
     #sh-metro-planner .ride-settings { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: calc(var(--font-size-base) * .7); }
     #sh-metro-planner .field { display: grid; gap: calc(var(--font-size-base) * .3); min-width: 0; }
-    #sh-metro-planner .field input { width: 100%; box-sizing: border-box; }
+    #sh-metro-planner .field :is(input, select) { width: 100%; box-sizing: border-box; background: var(--card); }
+    #sh-metro-planner .field > .form-label, #sh-metro-planner .fare-field > .form-label { color: var(--foreground); font-weight: 500; }
     #sh-metro-planner .validity-range { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: calc(var(--font-size-base) * .5); }
     #sh-metro-planner .fare-entry { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: calc(var(--font-size-base) * .5); align-items: center; }
     #sh-metro-planner .fare-status:empty { display: none; }
     #sh-metro-planner .total-summary { display: grid; align-content: center; gap: calc(var(--font-size-base) * .35); min-width: 0; }
     #sh-metro-planner .total-formula { color: var(--muted-foreground); }
-    #sh-metro-planner .calendar-section { display: grid; gap: calc(var(--font-size-base) * .65); }
+    #sh-metro-planner .calendar-section { display: grid; gap: calc(var(--font-size-base) * .65); padding-left: calc(var(--font-size-base) * .8); border-left: 3px solid var(--orange); }
     #sh-metro-planner .calendar-head, #sh-metro-planner .calendar-toolbar, #sh-metro-planner .calendar-actions, #sh-metro-planner .calendar-legend { display: flex; align-items: center; flex-wrap: wrap; gap: calc(var(--font-size-base) * .5); }
     #sh-metro-planner .calendar-head { justify-content: space-between; }
     #sh-metro-planner .calendar-toolbar { justify-content: space-between; }
@@ -1914,7 +1917,7 @@ html>body{padding:0}</style>
     #sh-metro-planner .legend-mark.makeup { background: var(--green); }
     #sh-metro-planner .summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: calc(var(--font-size-base) * .7); }
     #sh-metro-planner .summary .card { display: grid; gap: calc(var(--font-size-base) * .3); min-width: 0; }
-    #sh-metro-planner .result { display: grid; gap: calc(var(--font-size-base) * .6); }
+    #sh-metro-planner .result { display: grid; gap: calc(var(--font-size-base) * .6); padding-left: calc(var(--font-size-base) * .8); border-left: 3px solid var(--purple); }
     #sh-metro-planner .result-head { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: calc(var(--font-size-base) * .5); }
     #sh-metro-planner .plan-table { width: 100%; table-layout: fixed; }
     #sh-metro-planner .plan-table th, #sh-metro-planner .plan-table td { text-align: left; }
@@ -1930,10 +1933,13 @@ html>body{padding:0}</style>
       #sh-metro-planner .plan-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 540px) {
+      #sh-metro-planner { width: calc(100% - 24px) !important; padding-top: calc(var(--font-size-base) * .8) !important; gap: calc(var(--font-size-base) * 1.05); }
       #sh-metro-planner .route-grid, #sh-metro-planner .plan-grid, #sh-metro-planner .summary, #sh-metro-planner .ride-settings { grid-template-columns: 1fr; }
       #sh-metro-planner .route-grid .fare-field { grid-column: auto; }
       #sh-metro-planner .validity-range { grid-template-columns: 1fr; }
       #sh-metro-planner .intro { padding-right: 0; }
+      #sh-metro-planner .section-head { align-items: flex-start; }
+      #sh-metro-planner .form-section, #sh-metro-planner .calendar-section, #sh-metro-planner .result { padding-left: calc(var(--font-size-base) * .6); }
       #sh-metro-planner .table-responsive { overflow: visible; }
       #sh-metro-planner .plan-table, #sh-metro-planner .plan-table tbody, #sh-metro-planner .plan-table tr { display: block; width: 100%; }
       #sh-metro-planner .plan-table thead { display: none; }
@@ -1952,8 +1958,8 @@ html>body{padding:0}</style>
   <section class="form-section" aria-labelledby="sh-route-title">
     <div class="section-head"><h2 id="sh-route-title">路线与票价</h2><span class="text-small text-muted">票价可手动填写，也可自动查询</span></div>
     <div class="route-grid">
-      <label class="field"><span class="form-label">出发站</span><input id="sh-origin" class="form-control" list="sh-stations" value="下沙" autocomplete="off"></label>
-      <label class="field"><span class="form-label">到达站</span><input id="sh-destination" class="form-control" list="sh-stations" value="张江高科" autocomplete="off"></label>
+      <label class="field"><span class="form-label">出发站</span><select id="sh-origin" class="form-select" aria-label="出发站"></select></label>
+      <label class="field"><span class="form-label">到达站</span><select id="sh-destination" class="form-select" aria-label="到达站"></select></label>
       <div class="field fare-field"><label class="form-label" for="sh-fare">单程新票价（元）</label><div class="fare-entry"><input id="sh-fare" class="form-control" type="number" min="3" max="30" step="1" value="7" aria-label="手动输入单程新票价"><button id="sh-query-fare" class="btn btn-primary" type="button"><i data-lucide="cloud-download" aria-hidden="true"></i><span id="sh-query-label">查询票价</span></button></div><span id="sh-query-status" class="fare-status text-small text-muted" aria-live="polite"></span></div>
     </div>
   </section>
@@ -1972,7 +1978,6 @@ html>body{padding:0}</style>
       <div class="card viz-stat total-summary" aria-live="polite"><span class="text-muted">总乘车次数</span><strong id="sh-total-rides" class="viz-stat-value tabular-nums">44 次</strong><span id="sh-total-formula" class="total-formula text-small">22 天 × 2 + 0 = 44 次</span></div>
     </div>
   </section>
-  <datalist id="sh-stations"></datalist>
   <p id="sh-validation" class="text-destructive" role="alert" hidden></p>
   <section class="calendar-section" aria-labelledby="sh-calendar-title">
     <div class="calendar-head"><div><h2 id="sh-calendar-title">多选乘车日期</h2><span id="sh-calendar-summary" class="text-small text-muted"></span></div><div class="calendar-actions"><button id="sh-select-workdays" class="btn" type="button">仅选工作日</button><button id="sh-clear-days" class="btn btn-ghost" type="button">清空</button></div></div>
@@ -2041,9 +2046,17 @@ html>body{padding:0}</style>
         if (!codesByName.has(name)) codesByName.set(name, []);
         codesByName.get(name).push(stationCode(lineIndex, stationIndex));
       }));
-      const list = root.querySelector('#sh-stations');
-      stations.forEach(name => { const option = document.createElement('option'); option.value = name; list.append(option); });
       const $ = id => root.querySelector('#sh-' + id);
+      [['origin', '下沙'], ['destination', '张江高科']].forEach(([id, defaultValue]) => {
+        const select = $(id);
+        stations.forEach(name => {
+          const option = document.createElement('option');
+          option.value = name;
+          option.textContent = name;
+          option.selected = name === defaultValue;
+          select.append(option);
+        });
+      });
       const fields = ['origin', 'destination', 'fare', 'rides-per-day', 'extra-rides', 'date', 'prior'];
       const builtInFares = { '下沙|张江高科': 7 };
       const fareKey = (a, b) => [a, b].sort((x, y) => x.localeCompare(y, 'zh-CN')).join('|');
